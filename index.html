@@ -4,18 +4,125 @@
     <meta charset="utf-8">
     <title>Brice Nédelec</title>
 
+    <link rel="stylesheet"
+    	  href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    	  integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    	  crossorigin="anonymous">
+    
+    <link rel="stylesheet"
+	  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet"
+	  href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	  crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+	    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+	    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+	    crossorigin="anonymous"></script>
+
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/main.js"></script>
   </head>
   
   
-  <body>
+  <body onload="moveNavi(document.getElementById('about'))">
+
+    <img id="navi" src="navi.gif">
     
     <nav>
-      <a href="#About">About</a>
-      <a href="#Publications">Publications</a>
-      <a href="#Projects">Projects</a>
+      <a id="about" href="#About" onclick="moveNavi(this)">About</a>
+      <a href="#Publications" onclick="moveNavi(this)">Publications</a>
+      <a href="#Projects" onclick="moveNavi(this)">Projects</a>
+      <a href="#Contact" onclick="moveNavi(this)">Contact</a>
     </nav>
 
+    <div id="vertical"></div>
+
+    <div class="container">
+      <div class="row">
+	<div class="col-sm-12">
+	  <h1>Brice Nédelec</h1>
+	  - Ph.D. / Software architect
+	</div>
+      </div>
+
+      <div id="About" class="row">
+	<div class="col-sm-12">
+	  <h3>About <i class="fas fa-crow"></i></h3>
+	  Current position.
+
+	  When I got phd.
+	  
+	  Have more faith in animals than human kind.
+
+	  My interests.
+	</div>
+      </div>
+
+      <div id="Publications" class="row">
+	<div class="col-sm-12">
+	  <h3>Publications <i class="fas fa-pencil-ruler"></i></h3>
+	  <ul>
+	    <li>
+	      Brice Nédelec.
+	      Collaborative editing in Web browsers.
+	      <i>Ph.D. manuscript.</i>
+	      October 2016.
+	    </li>
+	    <li>
+	      Brice Nédelec, Pascal Molli, and Achour Mostéfaoui.
+	      <a href="https://hal.archives-ouvertes.fr/hal-01303333/document">
+		CRATE: Writing stories together with our browsers.</a>
+	      <i>Proceedings of the 25th International Conference Companion on World Wide Web,
+		WWW'16 Companion.</i>
+	      April 2016.
+	    </li>
+	    <li>
+	      Brice Nédelec, Julian Tanke, Davide Frey, Pascal Molli, and Achour Mostéfaoui.
+	      Spray: an Adaptive Random Peer Sampling Protocol.
+	      <i>Technical report, LINA-University of Nantes; INRIA Rennes -- Bretagne Atlantique</i>
+	      September 2015.
+	    </li>
+	    <li>
+	      Brice Nédelec, Pascal Molli, and Achour Mostéfaoui.
+	      <a href="https://hal.archives-ouvertes.fr/hal-00921633/document">
+		LSEQ: an Adaptive Structure for Sequences in Distributed Collaborative Editing.</a>
+	      <i>13th ACM Symposium on Document Engineering.</i>
+              September 2013.
+	    </li>
+	    <li>
+	      Brice Nédelec, Emmanuel Desmontils, Pascal Molli, and Achour Mostéfaoui.
+	      <a href="https://hal.archives-ouvertes.fr/hal-00921655/document">
+		Concurrency effects over variable-size identifiers in distributed collaborative editing.</a>
+	      <i>DChanges, volume 1008 of CEUR Workshop Proceedings.</i>
+              September 2013.
+	    </li>
+	  </ul>
+	</div>
+      </div>
+
+      <div id="Projects" class="row">
+	<div class="col-sm-12">
+	  <h3>Projects <i class="fas fa-palette"></i></h3>
+	</div>
+      </div>
+
+      <div id="Contact" class="row">
+	<div class="col-sm-12">
+	  <h3>Contact <i class="fas fa-mail-bulk"></i></h3>
+	  <ul>
+	    <li><i class="fas fa-envelope"></i> brice.nedelec at ls2n.fr</li>
+	    <li><i class="fas fa-envelope"></i> brice.nedelec at gmail.com</li>
+	    <li><i class="fab fa-github-square"></i> <a href="https://github.com/chat-wane">chat-wane</a></li>
+	</div>
+      </div>
+      
+    </div>
     
   </body>
   
