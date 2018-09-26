@@ -42,6 +42,7 @@ body {
 
 nav {
     left: 0px;
+    top: -25px;
     padding-bottom: 15px;
     padding-top: 15px;
     position: fixed;
@@ -92,8 +93,15 @@ nav a:hover {
     padding: 10px;
 }
 
+h1 {
+    color: #073642;
+}
 h3 {
     color: #cb4b16;
+    margin-bottom: 10px;
+}
+h4 {
+    color: #073642;
 }
 
 img {
