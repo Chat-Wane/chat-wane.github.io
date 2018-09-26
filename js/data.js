@@ -12,7 +12,12 @@ var achour = "Achour Mostéfaoui";
 var emmanuel = "Emmanuel Desmontils";
 var julian = "Julian Tanke";
 var davide = "Davide Frey";
-   
+
+
+var description = {
+    "shortstory": "Ph.D from the GDD team at LINA, Nantes, France. Interested in decentralized ",
+    "longstory": ""
+};
 
 var cv = {
     "firstname": "Brice",

@@ -1,0 +1,14 @@
+
+nav {
+    left:0px;
+    margin-left:0px;
+    padding-left:0px;
+    position:absolute;
+    background-color: lightgrey;
+    transform-origin: bottom left;
+    transform: rotate(90deg);
+}
+
+nav a {
+    padding-right: 20px;
+}
