@@ -26,6 +26,13 @@ body {
     color: #586e75;
 }
 
+#main {
+    position:absolute;
+    left: 0px;
+    margin-left: 70px;
+    right: 0px;
+}
+
 #navi{
     position: fixed;
     left: 0px;
@@ -91,4 +98,19 @@ h3 {
 
 img {
     border-radius: 20rem;
+}
+
+.publication {
+    font-family: "Courier New", Courier, monospace;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #eee8d5;
+}
+.publication > * > * > h4 {
+    font-family: "";
+}
+.publication > * > .col-sm-4 {
+    border-style: solid;
+    border-width: 0px 1px 0px 0px;
+    border-color: #eee8d5;
 }

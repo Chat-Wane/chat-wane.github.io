@@ -2,7 +2,7 @@
   
   <head>
     <meta charset="utf-8">
-    <title>Brice Nédelec</title>
+    <title>Brice Nédelec's homepage</title>
 
     <link rel="stylesheet"
     	  href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
@@ -43,6 +43,7 @@
 
     <div id="vertical"></div>
 
+    <div id="main">
     <div class="container">
       <div class="row">
 	<div class="col-sm-12">
@@ -54,61 +55,323 @@
       <div id="About" class="row">
 	<div class="col-sm-12">
 	  <h3>About <i class="fas fa-crow"></i></h3>
-	  Current position.
+	  <p>I currently hold a post-doctoral position at the
+	  University of Nantes, France as a member of
+	  the <a href="https://www.ls2n.fr/equipe/gdd/">GDD
+	  team</a>.</p>
 
-	  When I got phd.
+	  <p>When I got phd.</p>
 	  
-	  Have more faith in animals than human kind.
-
-	  My interests.
+	  <p>Have more faith in animals than human kind.
+	  My interests.</p>
 	</div>
       </div>
 
       <div id="Publications" class="row">
 	<div class="col-sm-12">
 	  <h3>Publications <i class="fas fa-pencil-ruler"></i></h3>
-	  <ul>
-	    <li>
-	      Brice Nédelec.
-	      Collaborative editing in Web browsers.
-	      <i>Ph.D. manuscript.</i>
-	      October 2016.
-	    </li>
-	    <li>
-	      Brice Nédelec, Pascal Molli, and Achour Mostéfaoui.
-	      <a href="https://hal.archives-ouvertes.fr/hal-01303333/document">
-		CRATE: Writing stories together with our browsers.</a>
-	      <i>Proceedings of the 25th International Conference Companion on World Wide Web,
-		WWW'16 Companion.</i>
-	      April 2016.
-	    </li>
-	    <li>
-	      Brice Nédelec, Julian Tanke, Davide Frey, Pascal Molli, and Achour Mostéfaoui.
-	      Spray: an Adaptive Random Peer Sampling Protocol.
-	      <i>Technical report, LINA-University of Nantes; INRIA Rennes -- Bretagne Atlantique</i>
-	      September 2015.
-	    </li>
-	    <li>
-	      Brice Nédelec, Pascal Molli, and Achour Mostéfaoui.
-	      <a href="https://hal.archives-ouvertes.fr/hal-00921633/document">
-		LSEQ: an Adaptive Structure for Sequences in Distributed Collaborative Editing.</a>
-	      <i>13th ACM Symposium on Document Engineering.</i>
-              September 2013.
-	    </li>
-	    <li>
-	      Brice Nédelec, Emmanuel Desmontils, Pascal Molli, and Achour Mostéfaoui.
-	      <a href="https://hal.archives-ouvertes.fr/hal-00921655/document">
-		Concurrency effects over variable-size identifiers in distributed collaborative editing.</a>
-	      <i>DChanges, volume 1008 of CEUR Workshop Proceedings.</i>
-              September 2013.
-	    </li>
-	  </ul>
+
+	  <div class="container publication">
+	    <div class="row">
+	      <div class="col-sm-12">
+		<h4>Breaking the Scalability Barrier of Causal Broadcast in Large and Dynamic Systems
+		  [<a href="https://hal.inria.fr/hal-01778901/document">pdf</a>]
+		  [<a href="https://github.com/parchemins/paper-pcbroadcast-tex">tex</a>]
+		  [<a href="https://github.com/parchemins/slides-pcbroadcast-tex">slides</a>]
+		</h4>
+	      </div>	      
+	    </div>
+	    <div class="row">
+	      <div class="col-sm-4">
+		Brice Nédelec, Pascal Molli, and Achour Mostéfaoui<br />
+		October 2018<br />
+		<i>International Symposium on Reliable Distributed Systems</i>
+	      </div>
+	      <div class="col-sm-8">
+		Many distributed protocols and applications rely on
+		causal broadcast to ensure consistency
+		criteria. However, none of causality tracking
+		state-of-the-art approaches scale in large and dynamic
+		systems. This paper presents a new non-blocking causal
+		broadcast protocol suited for dynamic systems. The
+		proposed protocol outperforms state-of-the-art in size
+		of messages, execution time complexity, and local
+		space complexity. Most importantly, messages piggyback
+		control information the size of which is constant. We
+		prove that for both static and dynamic
+		systems. Consequently, large and dynamic systems can
+		finally afford causal broadcast.
+	      </div>
+	    </div>
+	  </div>	  
+	  
+	  
+	  <div class="container publication">
+	    <div class="row">
+	      <div class="col-sm-12">
+		<h4>A scalable sequence encoding for collaborative editing
+		  [<a href="https://hal.archives-ouvertes.fr/hal-01552799v2/document">pdf</a>]
+		  [<a href="https://github.com/parchemins/paper-crate-tex">tex</a>]</h4>
+	      </div>	      
+	    </div>
+	    <div class="row">
+	      <div class="col-sm-4">
+		Brice Nédelec, Pascal Molli, and Achour Mostéfaoui<br />
+		2017<br />
+		<i>Concurrency and Computation: Practice and Experience</i>
+	      </div>
+	      <div class="col-sm-8">
+		 Distributed real-time editors made real-time editing
+		 easy for millions of users. However, main stream
+		 editors rely on Cloud services to mediate sessions
+		 raising privacy and scalability issues. Decentralized
+		 editors tackle privacy issues but scalability issues
+		 remains. We aim to build a decentralized editor that
+		 allows real-time editing anytime, anywhere, whatever
+		 is the number of participants. In this paper, we
+		 propose an approach based on a massively replicated
+		 sequence data structure that represents the shared
+		 document. We establish an original tradeoff on
+		 communication, time and space complexity to maintain
+		 this sequence over a network of browsers. We prove a
+		 sublinear upper bound on communication complexity
+		 while preserving an affordable time and space
+		 complexity. In order to validate this tradeoff, we
+		 built a full working editor and measured its
+		 performance on large scale experiments involving up
+		 till 600 participants. As expected, the results show
+		 a traffic increasing as O((log I)^2 ln R) where I is
+		 the number of insertions in the document, and R the
+		 number of participants.
+	      </div>
+	    </div>
+	  </div>	  
+
+	  <div class="container publication">
+	    <div class="row">
+	      <div class="col-sm-12">
+		<h4>An Adaptive Peer-Sampling Protocol for Building Networks of Browsers
+		  [<a href="https://hal.inria.fr/hal-01619906/document">pdf</a>]
+		  [<a href="https://github.com/parchemins/paper-spray-tex">tex</a>]</h4>
+	      </div>	      
+	    </div>
+	    <div class="row">
+	      <div class="col-sm-4">
+		Brice Nédelec, Julian Tanke, Davide Frey, Pascal Molli, and Achour Mostéfaoui<br />
+		2017<br />
+		<i>World Wide Web Journal</i>
+	      </div>
+	      <div class="col-sm-8">
+		Peer-sampling protocols constitute a fundamental
+		mechanism for a number of large-scale distributed
+		applications. The recent introduction of WebRTC
+		facilitated the deployment of decentralized
+		applications over a network of browsers. However,
+		deploying existing peer-sampling protocols on top of
+		We-bRTC raises issues about their lack of adaptiveness
+		to sudden bursts of popularity over a network that
+		does not manage addressing or routing. Spray is a
+		novel random peer-sampling protocol that dynamically ,
+		quickly, and efficiently self-adapts to the network
+		size. Our experiments show the flexibility of Spray
+		and highlight its efficiency improvements at the cost
+		of small overhead. We embedded Spray in a real-time
+		decentralized editor running in brow-sers and ran
+		experiments involving up to 600 communicating web
+		browsers. The results demonstrate that Spray
+		significantly reduces the network traffic according to
+		the number of participants and saves bandwidth.
+	      </div>
+	    </div>
+	  </div>
+
+
+
+	  
+	  <div class="container publication">
+	    <div class="row">
+	      <div class="col-sm-12">
+		<h4>Collaborative editing in Web browsers
+		  [<a href="https://hal.archives-ouvertes.fr/tel-01387581/document">pdf</a>]
+		  [<a href="https://github.com/parchemins/thesis-tex">tex</a>]
+		  [<a href="https://github.com/parchemins/def-thesis-tex">slides</a>]</h4>
+	      </div>	      
+	    </div>
+	    <div class="row">
+	      <div class="col-sm-4">
+		Brice Nédelec<br />
+		October 2016<br />
+		<i>Ph.D. manuscript</i>
+	      </div>
+	      <div class="col-sm-8">
+		<p>Collaborative editors allow users to distribute the
+		  writing of a document across space and time. Thanks to
+		  their ease of use, real-time collaborative editors
+		  working in Web browsers vastly contributed to the
+		  adoption of such tools. However, current editors are
+		  centralized: a service provider's server hosts an
+		  editing session. It raises privacy and scalability
+		  issues.</p>
+		<p> Recently, the enabling of browser-to-browser connection establishments
+		  opened new opportunities in favor of a decentralized
+		  Web. Decentralized real-time collaborative editors working in Web
+		  browsers must efficiently handle highly dynamic groups of different
+		  size.</p>
+		<p>Contritributions of this thesis are threefold: (i)
+		  To represent the document, we propose a replicated
+		  data structure for sequences using metadata the size
+		  of which scales sub-linearly compared to the number
+		  of inserted characters.  (ii) To efficiently
+		  propagate the changes to all editors involved in the
+		  collaborative writing, we propose a random peer
+		  sampling protocol that supports Web browsers
+		  constraints and self-adjusts its functioning to the
+		  variations of network membership.  (iii) To
+		  demonstrate the feasibility of a decentralized
+		  real-time collaborative editors running in Web
+		  browsers, we propose an editor using (i) and (ii),
+		  and we highlight its scalability.</p>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="container publication">
+	    <div class="row">
+	      <div class="col-sm-12">
+		<h4>CRATE: Writing stories together with our browsers
+		  [<a href="https://hal.archives-ouvertes.fr/hal-01303333/document">pdf</a>]
+		  [<a href="https://github.com/parchemins/demo-crate-tex">tex</a>]</h4>
+	      </div>	      
+	    </div>
+	    <div class="row">
+	      <div class="col-sm-4">
+		Brice Nédelec, Pascal Molli, and Achour Mostéfaoui<br />
+		April 2016<br />
+		<i>Proceedings of the 25th International Conference Companion on World Wide Web,
+		  WWW'16 Companion</i>
+	      </div>
+	      <div class="col-sm-8">
+		Real-time collaborative editors are common tools to
+		distribute work across space, time, and
+		organizations. Unfortunately, mainstream editors such
+		as Google Docs rely on central servers and raises
+		privacy and scalability issues. CRATE is a real-time
+		decentralized collaborative editor that runs directly
+		in web browsers thanks to WebRTC. Compared to
+		state-of-the-art, CRATE is the first real-time editor
+		that only requires browsers in order to support
+		collaborative editing and to transparently handle from
+		small to large groups of users. Consequently, CRATE
+		can also be used in massive online lectures, TV shows
+		or large conferences to allow users to share their
+		notes. CRATE's properties rely on two scientific
+		results: (i) a replicated sequence structure with
+		sub-linear upper bound on space complexity; this
+		prevents the editor from running costly distributed
+		garbage collectors, (ii) an adaptive peer sampling
+		protocol; this prevent the editor from oversizing
+		routing tables, hence from letting small networks pay
+		the price of large networks. This paper describes
+		CRATE, its properties and its usage.
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="container publication">
+	    <div class="row">
+	      <div class="col-sm-12">
+		<h4>LSEQ: an Adaptive Structure for Sequences in Distributed Collaborative Editing
+		  [<a href="https://hal.archives-ouvertes.fr/hal-00921633/document">pdf</a>]
+		  [<a href="https://github.com/parchemins/paper-lseq-tex">tex</a>]</h4>
+	      </div>	      
+	    </div>
+	    <div class="row">
+	      <div class="col-sm-4">
+		Brice Nédelec, Pascal Molli, and Achour Mostéfaoui<br />
+		September 2013<br />
+		<i>13th ACM Symposium on Document Engineering</i>
+	      </div>
+	      <div class="col-sm-8">
+		Distributed collaborative editing systems allow users
+		to work distributed in time, space and across
+		organizations. Trending distributed collaborative
+		editors such as Google Docs, Etherpad or Git have
+		grown in popularity over the years. A new kind of
+		distributed editors based on a family of distributed
+		data structure replicated on several sites called
+		Conflict-free Replicated Data Type (CRDT for short)
+		appeared recently. This paper considers a CRDT that
+		represents a distributed sequence of basic elements
+		that can be lines, words or characters (sequence
+		CRDT). The possible operations on this sequence are
+		the insertion and the deletion of elements. Compared
+		to the state of the art, this approach is more
+		decentralized and better scales in terms of the number
+		of participants. However, its space complexity is
+		linear with respect to the total number of inserts and
+		the insertion points in the document. This makes the
+		overall performance of such editors dependent on the
+		editing behaviour of users. This paper proposes and
+		models LSEQ, an adaptive allocation strategy for a
+		sequence CRDT. LSEQ achieves in the average a
+		sub-linear spatial-complexity whatever is the editing
+		behaviour. A series of experiments validates LSEQ
+		showing that it outperforms existing approaches.
+	      </div>
+	    </div>
+	  </div>
+
+
+	  <div class="container publication">
+	    <div class="row">
+	      <div class="col-sm-12">
+		<h4>Concurrency effects over variable-size identifiers in distributed collaborative editing
+		  [<a href="https://hal.archives-ouvertes.fr/hal-00921655/document">pdf</a>]
+		  [<a href="https://github.com/parchemins/paper-hlseq-tex">tex</a>]</h4>
+	      </div>	      
+	    </div>
+	    <div class="row">
+	      <div class="col-sm-4">
+		Brice Nédelec, Pascal Molli, and Achour Mostéfaoui<br />
+		September 2013<br />
+		<i>DChanges, volume 1008 of CEUR Workshop Proceedings</i>
+	      </div>
+	      <div class="col-sm-8">
+		Distributed collaborative editors such as Google Docs
+		or Etherpad allow to distribute the work across time,
+		space and organizations. In this paper, we focus on
+		distributed collaborative editors based on the
+		Conflict-free Replicated Data Type approach
+		(CRDT). CRDTs encompass a set of well-known data types
+		(sets, graphs, sequences, etc.). CRDTs for sequences
+		model a document as a set of elements (character,
+		line, paragraph, etc.) with unique identifiers,
+		providing two commutative update operations: insert
+		and delete. The identifiers of elements can be either
+		of fixed-size or variable-size. Recently, a strategy
+		for assigning variable-size identifiers called LSEQ
+		has been proposed for CRDTs for sequences. LSEQ lowers
+		the space complexity of variable-size identifiers
+		CRDTs from linear to sub-linear. While experiments
+		show that it works locally, it fails to provide this
+		bound with multiple users and latency. In this paper,
+		we propose h-LSEQ, an improvement of LSEQ that
+		preserves its space complexity among all
+		collaborators, regardless of the latency. Ultimately,
+		this improvement allows to safely build distributed
+		collaborative editors based on CRDTs. We validate our
+		approach with simulations involving latency and
+		multiple users.
+	      </div>
+	    </div>
+	  </div>
 	</div>
       </div>
 
       <div id="Projects" class="row">
 	<div class="col-sm-12">
 	  <h3>Projects <i class="fas fa-palette"></i></h3>
+	  I had a lot of projects, but most of them are unfinished business... 
 	</div>
       </div>
 
@@ -122,6 +385,7 @@
 	</div>
       </div>
       
+    </div>
     </div>
     
   </body>
