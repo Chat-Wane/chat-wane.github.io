@@ -130,3 +130,11 @@ img {
     margin-right: auto;
     top: 10%;
 }
+
+.profile_pic {
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    top:10%;
+}
