@@ -1,20 +1,11 @@
 
-/* base03    #002b36 */
-/* base02    #073642 */
-/* base01    #586e75 */
-/* Base00    #657b83 */
-/* base0     #839496 */
-/* base1     #93a1a1 */
-/* base2     #eee8d5 */
-/* base3     #fdf6e3 */
-/* yellow    #b58900 */
-/* orange    #cb4b16 */
-/* red       #dc322f */
-/* magenta   #d33682 */
-/* violet    #6c71c4 */
-/* blue      #268bd2 */
-/* cyan      #2aa198 */
-/* green     #859900 */
+/* https://www.nordtheme.com/docs/colors-and-palettes */
+:root {
+--nord0:  #2e3440; --nord1:  #3b4252; --nord2:  #434c5e; --nord3:  #4c566a; /* polar night */
+--nord6:  #eceff4; --nord5:  #e5e9f0; --nord4:  #d8dee9; /* snow storm */
+--nord7:  #8fbcbb; --nord8:  #88c0d0; --nord9:  #81a1c1; --nord10: #5e81ac; /* frost */
+--nord11: #bf616a; --nord12: #d08770; --nord13: #ebcb8b; --nord14: #a3be8c; --nord15: #b48ead; /* aurora */
+}
 
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
     margin:0;
@@ -22,7 +13,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
 }
 
 body {
-    background-color: #eee8d5;
+    background-color: white;
     color: #586e75;
 }
 
@@ -93,15 +84,14 @@ nav a:hover {
     padding: 10px;
 }
 
-h1 {
-    color: #073642;
+h1, h2 {
+    color: var(--nord0);
 }
 h3 {
-    color: #cb4b16;
-    margin-bottom: 10px;
+    color: var(--nord3);
 }
 h4 {
-    color: #073642;
+    color: var(--nord3);
 }
 
 img {

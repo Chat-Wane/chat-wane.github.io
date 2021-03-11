@@ -1,0 +1,32 @@
+#+TITLE: Brice NÉDELEC
+#+DATE: [2021-03-11 Jeu]
+#+AUTHOR: chat-wane
+#+EMAIL: grumpy dot chat dot wane at gmail dot com
+
+#+OPTIONS: toc:nil
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/style.css" />
+#+HTML_HEAD: <script src="js/main.js"></script>
+
+* Who am I ?
+
+** This is a test 
+
+*** meow miaw
+
+I currently hold a post-doctoral position at the University of Nantes,
+France, as a member of the [[https://www.ls2n.fr/equipe/gdd/][GDD team]]. I work on a project that aims to
+build fully working distributed systems inside web browsers. In
+particular, I work on causal broadcast: a communication primitive of
+many distributed applications.
+
+I got a Ph.D. in computer science from the University of Nantes,
+France, in 2016. The topic of this Ph.D. thesis was about
+decentralized collaborative editing in web browsers. This thesis was
+supervised by Prof. Pascal Molli, and Prof. Achour
+Mostéfaoui. Beforehand, I obtained a M.Sc. degree in software
+architecture from the University of Nantes in 2012.
+	  
+My research interests include, but are not limited to, decentralized
+protocols, causality tracking, and distributed collaborative
+editing. Overall, I am just interested in solving puzzles.
+
