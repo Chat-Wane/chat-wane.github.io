@@ -43,13 +43,6 @@ body {
     counter-reset: section;
 }
 
-#main {
-    position:absolute;
-    left: 0px;
-    margin-left: 70px;
-    right: 0px;
-}
-
 #navi{
     position: fixed;
     left: 0px;
@@ -63,36 +56,39 @@ nav {
     padding-bottom: 15px;
     padding-top: 15px;
     position: fixed;
-    background-color: #eee8d5;
+    background-color: white;
     transform-origin: bottom left;
     transform: rotate(90deg);
     font-family: "Courier New", Courier, monospace;
     font-size: 20px;
+    z-index: 1;
+    width: 1000000px;
 }
 
 a:link {
-    color: #268bd2;
+    color: var(--nord10);
 }
 a:hover {
     text-decoration: underline;
 }
 a:visited {
-    color: #6c71c4;
+    color: var(--nord15);
 }
 
 nav a {
-    padding-right: 30px;    
+    padding-left: 20px;
+    padding-right: 20px;
 }
 nav a:link {
-    color: #cb4b16;
+    color: var(--nord0);
     text-decoration: none;
 }
 nav a:visited {
-    color: #cb4b16;
+    color: var(--nord0);
     text-decoration: none;
 }
 nav a:hover {
-    color: #cb4b16;
+    color: var(--nord0);
     text-decoration: underline;
 }
 
@@ -100,8 +96,9 @@ nav a:hover {
     position:fixed;
     height:100%;
     width:1px;
-    background-color: #cb4b16;
-    left: 60px;    
+    background-color: var(--nord0);
+    left: 60px;
+    z-index: 1;
 }
 
 .container .row {
@@ -120,9 +117,10 @@ h2::before {
     left: -100%;
 }
 
-
 h1, h2 {
     color: var(--nord0);
+    padding-top: 64px;
+    margin-bottom: 16px;
 }
     
 h2 {
@@ -143,9 +141,16 @@ h3::before {
 
 h3 {
     color: var(--nord3);
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 /* no h4, h5 */
+
+p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
 
 img {
     border-radius: 20rem;
