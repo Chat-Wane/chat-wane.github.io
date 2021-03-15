@@ -13,6 +13,8 @@
 
 *** meow miaw
 
+/test/ et *test* et ~test~.
+
 I currently hold a post-doctoral position at the University of Nantes,
 France, as a member of the [[https://www.ls2n.fr/equipe/gdd/][GDD team]]. I work on a project that aims to
 build fully working distributed systems inside web browsers. In

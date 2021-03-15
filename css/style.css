@@ -7,6 +7,27 @@
 --nord11: #bf616a; --nord12: #d08770; --nord13: #ebcb8b; --nord14: #a3be8c; --nord15: #b48ead; /* aurora */
 }
 
+
+
+@font-face {
+    font-family: "Iosevka";
+    src: url("iosevka-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Iosevka";
+    src: url("iosevka-bold.woff2") format("woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Iosevka";
+    src: url("iosevka-italic.woff2") format("woff2");
+    font-style: italic;
+}
+    
+
+
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
     margin:0;
     padding:0;
@@ -15,6 +36,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
 body {
     background-color: white;
     color: #586e75;
+    font-family: "Iosevka";
 }
 
 #main {
