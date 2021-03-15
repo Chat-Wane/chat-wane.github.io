@@ -1,5 +1,21 @@
 
 window.onload = createNav
+window.onresize = resizeNav
+
+
+
+/**
+ * Resize to always have all navigation links available, whatever the
+ * resolution of the screen.
+ */
+function resizeNav() {
+    let nav = document.getElementsByTagName("nav")[0];
+    nav.style.width = window.innerHeight + "px";
+    
+    let rect = nav.getBoundingClientRect();
+
+    document.documentElement.style.setProperty("--left-margin", rect.width + "px");
+}
 
 /**
  * Creates the navigation bar on the left of the screen that enables
@@ -14,21 +30,21 @@ function createNav() {
     document.body.prepend(sep);
     
     let sections = document.getElementsByTagName("h2");
-    console.log(sections.length);
     for (let i = 0; i < sections.length; ++i) {
 	let section = sections[i];
 	let anchor = document.createElement("a");
 	anchor.setAttribute("href", "#"+section.getAttribute("id"));
 	anchor.text = section.textContent || section.innerText;
 	nav.appendChild(anchor);
-	console.log(section.textContent);
-	console.log(section);
     }
 
-    let rect = nav.getBoundingClientRect();
-    sep.style.left = rect.width + "px";
-    nav.style.top = "-" + rect.width + "px";       
+    // let rect = nav.getBoundingClientRect();
+    // sep.style.left = rect.width + "px";
+    // nav.style.top = "-" + rect.width + "px";
+    
+    resizeNav()
 }
+
 
 // function moveNavi(element) {
 //     let rect = element.getBoundingClientRect();

@@ -5,6 +5,8 @@
 --nord6:  #eceff4; --nord5:  #e5e9f0; --nord4:  #d8dee9; /* snow storm */
 --nord7:  #8fbcbb; --nord8:  #88c0d0; --nord9:  #81a1c1; --nord10: #5e81ac; /* frost */
 --nord11: #bf616a; --nord12: #d08770; --nord13: #ebcb8b; --nord14: #a3be8c; --nord15: #b48ead; /* aurora */
+
+--left-margin: 58px; /*value left for the navigation bar*/
 }
 
 
@@ -38,8 +40,7 @@ body {
     color: #586e75;
     font-family: "Iosevka";
     width: 720px;
-    margin:auto;
-
+    margin:auto;    
     counter-reset: section;
 }
 
@@ -48,21 +49,6 @@ body {
     left: 0px;
     top: 0px;
     z-index: 1;
-}
-
-nav {
-    left: 0px;
-    top: -25px;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    position: fixed;
-    background-color: white;
-    transform-origin: bottom left;
-    transform: rotate(90deg);
-    font-family: "Courier New", Courier, monospace;
-    font-size: 20px;
-    z-index: 1;
-    width: 1000000px;
 }
 
 a:link {
@@ -75,9 +61,28 @@ a:visited {
     color: var(--nord15);
 }
 
+#content {
+    margin-left: calc(+1px + var(--left-margin));
+}
+
+nav {
+    top: calc(-1*var(--left-margin));
+    left: 0px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    position: fixed;
+    background-color: white;
+    transform-origin: bottom left;
+    transform: rotate(90deg);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    z-index: 1;
+    overflow-wrap: break-word;
+}
+
 nav a {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 nav a:link {
     color: var(--nord0);
@@ -97,7 +102,7 @@ nav a:hover {
     height:100%;
     width:1px;
     background-color: var(--nord0);
-    left: 60px;
+    left: var(--left-margin);
     z-index: 1;
 }
 
@@ -108,7 +113,7 @@ nav a:hover {
 }
 
 h2::before {
-    content: "Section " counter(section);
+    content: "Section " counter(section, upper-roman);
     counter-increment: section;
     color: var(--nord6);
     margin-right: 8px;
@@ -129,7 +134,7 @@ h2 {
 }
 
 h3::before {
-    content: counter(section) "." counter(subsection);
+    content: counter(section, upper-roman) "." counter(subsection);
     counter-increment: subsection;
     text-transform: uppercase;
     color: var(--nord6);

@@ -8,7 +8,7 @@
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/style.css" />
 #+HTML_HEAD: <script src="js/main.js"></script>
 
-* Who am I ?
+* About
 
 ** This is a test 
 
@@ -31,11 +31,11 @@ My research interests include, but are not limited to, decentralized
 protocols, causality tracking, and distributed collaborative
 editing. Overall, I am just interested in solving puzzles.
 
-* A Second section
+* Education
 ** To make some additional testsststst
 ** Woof
 
-* A third !
-* Forth
-* Fifth
-* Millionniniinni
+* Experience
+* Publications
+* Skills
+
