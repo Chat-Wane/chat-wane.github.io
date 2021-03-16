@@ -10,28 +10,30 @@
 
 * About
 
-** This is a test 
+Let me introduce myself: my name is Brice Nédelec; and this is my
+personal page, that is, mostly an elaborated curriculum vitae.
 
-/test/ et *test* et ~test~.
+In 2016, I obtained a Ph.D in computer science from the [[https://www.univ-nantes.fr/][University of
+Nantes]] in France under the supervision of Pr. [[https://sites.google.com/view/pascal-molli][Pascal Molli]], and
+Pr. [[https://www.univ-nantes.fr/achour-mostefaoui][Achour Mostéfaoui]]; and with the helpful advice of Dr. [[https://www.univ-nantes.fr/emmanuel-desmontils][Emmanuel
+Desmontils]] in early stages. The topic was about giving back their
+ownership to authors of documents by decentralizing the collaborative
+editing done in Web browsers.
 
-I currently hold a post-doctoral position at the University of Nantes,
-France, as a member of the [[https://www.ls2n.fr/equipe/gdd/][GDD team]]. I work on a project that aims to
-build fully working distributed systems inside web browsers. In
-particular, I work on causal broadcast: a communication primitive of
-many distributed applications.
+My research interests include, but are not limited to, communication,
+consistency, and causality. While these topics mostly originate from
+my Ph.D about decentralized collaborative editors, I am deeply
+interested in the broader theme of distributed protocols. I like to
+understand, extract, and abstract the pieces that compose a
+middleware. Overall, I am just interested in solving puzzles.
 
-I got a Ph.D. in computer science from the University of Nantes,
-France, in 2016. The topic of this Ph.D. thesis was about
-decentralized collaborative editing in web browsers. This thesis was
-supervised by Prof. Pascal Molli, and Prof. Achour
-Mostéfaoui. Beforehand, I obtained a M.Sc. degree in software
-architecture from the University of Nantes in 2012.
-	  
-My research interests include, but are not limited to, decentralized
-protocols, causality tracking, and distributed collaborative
-editing. Overall, I am just interested in solving puzzles.
+Since forever, my personal interests expand to all sorts of arts. My
+trinity consists in music, painting, and gaming, for, at times, I
+strum some strings and wipe some brushes.
 
 * Education
+
+
 ** To make some additional testsststst
 ** Woof
 
