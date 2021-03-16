@@ -13,12 +13,13 @@
 Let me introduce myself: my name is Brice Nédelec; and this is my
 personal page, that is, mostly an elaborated curriculum vitae.
 
-In 2016, I obtained a Ph.D in computer science from the [[https://www.univ-nantes.fr/][University of
-Nantes]] in France under the supervision of Pr. [[https://sites.google.com/view/pascal-molli][Pascal Molli]], and
-Pr. [[https://www.univ-nantes.fr/achour-mostefaoui][Achour Mostéfaoui]]; and with the helpful advice of Dr. [[https://www.univ-nantes.fr/emmanuel-desmontils][Emmanuel
-Desmontils]] in early stages. The topic was about giving back their
-ownership to authors of documents by decentralizing the collaborative
-editing done in Web browsers.
+In 2016, I obtained a Ph.D in computer science from the
+[[https://www.univ-nantes.fr/][University of Nantes]] in France under
+the supervision of Pr. [[https://sites.google.com/view/pascal-molli][Pascal Molli]], and Pr. [[https://www.univ-nantes.fr/achour-mostefaoui][Achour Mostéfaoui]]; and
+with the helpful advice of Dr. [[https://www.univ-nantes.fr/emmanuel-desmontils][Emmanuel Desmontils]] in early
+stages. The topic was about giving back their ownership to authors of
+documents by decentralizing the collaborative editing done in Web
+browsers.
 
 My research interests include, but are not limited to, communication,
 consistency, and causality. While these topics mostly originate from
@@ -33,11 +34,207 @@ strum some strings and wipe some brushes.
 
 * Education
 
+** 2012 - 2016 Doctorate in computer science. /Laboratoire d'Informatique de Nantes Atlantique (LINA), UFR Sciences et Techniques, Nantes, France./
 
-** To make some additional testsststst
-** Woof
+** 2009 - 2012 Master degree in software architecture. /UFR Sciences et Techniques, Nantes, France & Dundalk Institute of Technology, Dundalk, Ireland./
+
+** 2006 - 2009 Bachelor in computer science. /UFR Sciences et Techniques, Nantes, France./
+
+** 2006 Baccalaureate in science. /Lycée Notre-Dame de Toutes Aides, Nantes, France./
 
 * Experience
+
+** March 2017 - December 2018 Building a Web of Browsers
+A post-doctoral position at LINA laboratory in Nantes, France. The
+topics were about causality tracking in unstructured networks, and
+broadcasting as a communication primitive for large scale networks
+subject to dynamic changes.
+
+** October 2012 - October 2016 Distributed and decentralized collaborative editing in Web browsers. 
+As a Ph.D student and member of the [[https://www.ls2n.fr/equipe/gdd/][GDD team]], at LINA laboratory in
+Nantes, France, under the supervision of Pr. Pascal Molli and
+Pr. Achour Mostéfaoui. The topics ranged from replicated data
+structures, to decentralized network membership protocols, and large
+scale collaborative editing in Web browsers.
+
+** October 2013 - June 2014 Teaching assistant
+I was teaching at the [[https://iutnantes.univ-nantes.fr/][Institute of Technology]] of Nantes in France to
+first year students. The courses included Swing, AWT, as well as
+JavaScript, CSS, and HTML.
+
+** March 2012 - August 2012 On the space complexity of Logoot's identifiers
+An internship that would later lead to a Ph.D! Logoot is a distributed
+data structure that allows writers to collaboratively and concurrently
+edit text documents. This data structure needs identifiers to avoid
+the difficult and error-prone task of solving editing conflicts. I
+studied ways to reduce the size of such identifiers.
+
+** April 2009 - June 2009 Design and development of a metrology software in C++
+Nothing new: monitoring is essential. This was an internship at [[https://www.univ-nantes.fr/plans-des-campus/iut-de-nantes-campus-la-fleuriaye][IUT,
+site de la Fleuriaye]], Carquefou, France. Developing such metrology
+tool to monitor software licences implied data aggregation; export and
+alert; a graphical user interface using Qt.
+
 * Publications
+
+** December 2018 Causal broadcast: how to forget? /Brice Nédelec, Pascal Molli, and Achour Mostéfaoui./ Proceedings of the 22nd International Conference on Principles of Distributed Systems (OPODIS).
+
+Causal broadcast constitutes a fundamental communication primitive of
+many distributed protocols and applications. However, state-of-the-art
+implementations fail to forget obsolete control information about
+already delivered messages. They do not scale in large and dynamic
+systems. In this paper, we propose a novel implementation of causal
+broadcast. We prove that all and only obsolete control information is
+safely removed, at cost of a few lightweight control messages. The
+local space complexity of this protocol does not monotonically
+increase and depends at each moment on the number of messages still in
+transit and the degree of the communication graph. Moreover, messages
+only carry a scalar clock. Our implementation constitutes a
+sustainable communication primitive for causal broadcast in large and
+dynamic systems.
+
+** October 2018 Breaking the Scalability Barrier of Causal Broadcast in Large and Dynamic Systems. /Brice Nédelec, Pascal Molli, and Achour Mostéfaoui./ Proceedings of the 37th IEEE International Symposium on Reliable Distributed Systems (SRDS).
+
+Many distributed protocols and applications rely on causal broadcast
+to ensure consistency criteria. However, none of causality tracking
+state-of-the-art approaches scale in large and dynamic systems. This
+paper presents a new non-blocking causal broadcast protocol suited for
+dynamic systems. The proposed protocol outperforms state-of-the-art in
+size of messages, execution time complexity, and local space
+complexity. Most importantly, messages piggyback control information
+the size of which is constant. We prove that for both static and
+dynamic systems. Consequently, large and dynamic systems can finally
+afford causal broadcast.
+
+** 2017 A scalable sequence encoding for collaborative editing. /Brice Nédelec, Pascal Molli, and Achour Mostéfaoui./ Concurrency and Computation: Practice and Experience, e4108.
+
+Distributed real-time editors made real-time editing easy for millions
+of users. However, main stream editors rely on Cloud services to
+mediate sessions raising privacy and scalability issues. Decentralized
+editors tackle privacy issues but scalability issues remains. We aim
+to build a decentralized editor that allows real-time editing anytime,
+anywhere, whatever is the number of participants. In this paper, we
+propose an approach based on a massively replicated sequence data
+structure that represents the shared document. We establish an
+original tradeoff on communication, time and space complexity to
+maintain this sequence over a network of browsers. We prove a
+sublinear upper bound on communication complexity while preserving an
+affordable time and space complexity. In order to validate this
+tradeoff, we built a full working editor and measured its performance
+on large scale experiments involving up till 600 participants. As
+expected, the results show a traffic increasing as O((log I)^2 ln R)
+where I is the number of insertions in the document, and R the number
+of participants.
+
+** 2017 An Adaptive Peer-Sampling Protocol for Building Networks of Browsers. /Brice Nédelec, [[https://github.com/jutanke][Julian Tanke]], [[http://people.irisa.fr/Davide.Frey/][Davide Frey]], Pascal Molli, and Achour Mostéfaoui./ World Wide Web Journal.
+
+Peer-sampling protocols constitute a fundamental mechanism for a
+number of large-scale distributed applications. The recent
+introduction of WebRTC facilitated the deployment of decentralized
+applications over a network of browsers. However, deploying existing
+peer-sampling protocols on top of We-bRTC raises issues about their
+lack of adaptiveness to sudden bursts of popularity over a network
+that does not manage addressing or routing. Spray is a novel random
+peer-sampling protocol that dynamically , quickly, and efficiently
+self-adapts to the network size. Our experiments show the flexibility
+of Spray and highlight its efficiency improvements at the cost of
+small overhead. We embedded Spray in a real-time decentralized editor
+running in brow-sers and ran experiments involving up to 600
+communicating web browsers. The results demonstrate that Spray
+significantly reduces the network traffic according to the number of
+participants and saves bandwidth.
+
+
+** October 2016 Collaborative editing in Web browsers. /Brice Nédelec./ Ph.D Manuscript.
+
+Collaborative editors allow users to distribute the writing of a
+document across space and time. Thanks to their ease of use, real-time
+collaborative editors working in Web browsers vastly contributed to
+the adoption of such tools. However, current editors are centralized:
+a service provider's server hosts an editing session. It raises
+privacy and scalability issues.
+
+Recently, the enabling of browser-to-browser connection establishments
+opened new opportunities in favor of a decentralized
+Web. Decentralized real-time collaborative editors working in Web
+browsers must efficiently handle highly dynamic groups of different
+size.
+
+Contritributions of this thesis are threefold: (i) To represent the
+document, we propose a replicated data structure for sequences using
+metadata the size of which scales sub-linearly compared to the number
+of inserted characters.  (ii) To efficiently propagate the changes to
+all editors involved in the collaborative writing, we propose a random
+peer sampling protocol that supports Web browsers constraints and
+self-adjusts its functioning to the variations of network membership.
+(iii) To demonstrate the feasibility of a decentralized real-time
+collaborative editors running in Web browsers, we propose an editor
+using (i) and (ii), and we highlight its scalability.
+
+** April 2016 CRATE: Writing stories together with our browsers. /Brice Nédelec, Pascal Molli, and Achour Mostéfaoui./ Proceedings of the 25th International Conference Companion on World Wide Web, WWW’16 Companion.
+
+Real-time collaborative editors are common tools to distribute work
+across space, time, and organizations. Unfortunately, mainstream
+editors such as Google Docs rely on central servers and raises privacy
+and scalability issues. CRATE is a real-time decentralized
+collaborative editor that runs directly in web browsers thanks to
+WebRTC. Compared to state-of-the-art, CRATE is the first real-time
+editor that only requires browsers in order to support collaborative
+editing and to transparently handle from small to large groups of
+users. Consequently, CRATE can also be used in massive online
+lectures, TV shows or large conferences to allow users to share their
+notes. CRATE's properties rely on two scientific results: (i) a
+replicated sequence structure with sub-linear upper bound on space
+complexity; this prevents the editor from running costly distributed
+garbage collectors, (ii) an adaptive peer sampling protocol; this
+prevent the editor from oversizing routing tables, hence from letting
+small networks pay the price of large networks. This paper describes
+CRATE, its properties and its usage.
+
+** September 2017 LSEQ: an Adaptive Structure for Sequences in Distributed Collaborative Editing. /Brice Nédelec, Pascal Molli, Achour Mostéfaoui, and Emmanuel Desmontils./ Proceedings of the 13th ACM Symposium on Document Engineering.
+
+Distributed collaborative editing systems allow users to work
+distributed in time, space and across organizations. Trending
+distributed collaborative editors such as Google Docs, Etherpad or Git
+have grown in popularity over the years. A new kind of distributed
+editors based on a family of distributed data structure replicated on
+several sites called Conflict-free Replicated Data Type (CRDT for
+short) appeared recently. This paper considers a CRDT that represents
+a distributed sequence of basic elements that can be lines, words or
+characters (sequence CRDT). The possible operations on this sequence
+are the insertion and the deletion of elements. Compared to the state
+of the art, this approach is more decentralized and better scales in
+terms of the number of participants. However, its space complexity is
+linear with respect to the total number of inserts and the insertion
+points in the document. This makes the overall performance of such
+editors dependent on the editing behaviour of users. This paper
+proposes and models LSEQ, an adaptive allocation strategy for a
+sequence CRDT. LSEQ achieves in the average a sub-linear
+spatial-complexity whatever is the editing behaviour. A series of
+experiments validates LSEQ showing that it outperforms existing
+approaches.
+
+** September 2013 Concurrency effects over variable-size identifiers in distributed collaborative editing. /Brice Nédelec, Pascal Molli, Achour Mostéfaoui, and Emmanuel Desmontils./ In DChanges, volume 1008 of CEUR Workshop Proceedings.
+
+Distributed collaborative editors such as Google Docs or Etherpad
+allow to distribute the work across time, space and organizations. In
+this paper, we focus on distributed collaborative editors based on the
+Conflict-free Replicated Data Type approach (CRDT). CRDTs encompass a
+set of well-known data types (sets, graphs, sequences, etc.). CRDTs
+for sequences model a document as a set of elements (character, line,
+paragraph, etc.) with unique identifiers, providing two commutative
+update operations: insert and delete. The identifiers of elements can
+be either of fixed-size or variable-size. Recently, a strategy for
+assigning variable-size identifiers called LSEQ has been proposed for
+CRDTs for sequences. LSEQ lowers the space complexity of variable-size
+identifiers CRDTs from linear to sub-linear. While experiments show
+that it works locally, it fails to provide this bound with multiple
+users and latency. In this paper, we propose h-LSEQ, an improvement of
+LSEQ that preserves its space complexity among all collaborators,
+regardless of the latency. Ultimately, this improvement allows to
+safely build distributed collaborative editors based on CRDTs. We
+validate our approach with simulations involving latency and multiple
+users.
+
 * Skills
 
