@@ -54,36 +54,74 @@ strum some strings and wipe some brushes.
 
 * Experience
 
-** March 2017 - December 2018 Building a Web of Browsers
+** A Green Label for Microservices Architectures.
+:PROPERTIES:
+:UNTIL:    March 2021
+:FROM:     September 2019
+:END:
+
+A software architect position at [[https://www.sigma.fr/][Sigma Informatique]] in
+La-Chapelle-sur-Erdre, France. This project aimed at enhancing
+microservices architectures in order to include end users in the
+decision processes about their energy consumption.
+
+** Building a Web of Browsers.
+:PROPERTIES:
+:UNTIL:    December 2018
+:FROM:     March 2017
+:END:
+
 A post-doctoral position at LINA laboratory in Nantes, France. The
 topics were about causality tracking in unstructured networks, and
 broadcasting as a communication primitive for large scale networks
 subject to dynamic changes.
 
-** October 2012 - October 2016 Distributed and decentralized collaborative editing in Web browsers. 
+** Distributed and decentralized collaborative editing in Web browsers. 
+:PROPERTIES:
+:UNTIL:    October 2016
+:FROM:     October 2012
+:END:
+
 As a Ph.D student and member of the [[https://www.ls2n.fr/equipe/gdd/][GDD team]], at LINA laboratory in
 Nantes, France, under the supervision of Pr. Pascal Molli and
 Pr. Achour Mostéfaoui. The topics ranged from replicated data
 structures, to decentralized network membership protocols, and large
 scale collaborative editing in Web browsers.
 
-** October 2013 - June 2014 Teaching assistant
+** Teaching assistant.
+:PROPERTIES:
+:UNTIL:    June 2014
+:FROM:     October 2013
+:END:
+
 I was teaching at the [[https://iutnantes.univ-nantes.fr/][Institute of Technology]] of Nantes in France to
 first year students. The courses included Swing, AWT, as well as
 JavaScript, CSS, and HTML.
 
-** March 2012 - August 2012 On the space complexity of Logoot's identifiers
+** On the space complexity of Logoot's identifiers.
+:PROPERTIES:
+:UNTIL:    August 2012
+:FROM:     March 2012
+:END:
+
 An internship that would later lead to a Ph.D! Logoot is a distributed
 data structure that allows writers to collaboratively and concurrently
 edit text documents. This data structure needs identifiers to avoid
 the difficult and error-prone task of solving editing conflicts. I
 studied ways to reduce the size of such identifiers.
 
-** April 2009 - June 2009 Design and development of a metrology software in C++
+** Design and development of a metrology software in C++.
+:PROPERTIES:
+:UNTIL:    June 2009
+:FROM:     April 2009
+:END:
+
 Nothing new: monitoring is essential. This was an internship at [[https://www.univ-nantes.fr/plans-des-campus/iut-de-nantes-campus-la-fleuriaye][IUT,
 site de la Fleuriaye]], Carquefou, France. Developing such metrology
 tool to monitor software licences implied data aggregation; export and
 alert; a graphical user interface using Qt.
+
+
 
 * Publications
 
@@ -147,11 +185,11 @@ to build a decentralized editor that allows real-time editing anytime,
 anywhere, whatever is the number of participants. In this paper, we
 propose an approach based on a massively replicated sequence data
 structure that represents the shared document. We establish an
-original tradeoff on communication, time and space complexity to
+original trade-off on communication, time and space complexity to
 maintain this sequence over a network of browsers. We prove a
 sublinear upper bound on communication complexity while preserving an
 affordable time and space complexity. In order to validate this
-tradeoff, we built a full working editor and measured its performance
+trade-off, we built a full working editor and measured its performance
 on large scale experiments involving up till 600 participants. As
 expected, the results show a traffic increasing as O((log I)^2 ln R)
 where I is the number of insertions in the document, and R the number
@@ -172,7 +210,7 @@ Peer-sampling protocols constitute a fundamental mechanism for a
 number of large-scale distributed applications. The recent
 introduction of WebRTC facilitated the deployment of decentralized
 applications over a network of browsers. However, deploying existing
-peer-sampling protocols on top of We-bRTC raises issues about their
+peer-sampling protocols on top of WebRTC raises issues about their
 lack of adaptiveness to sudden bursts of popularity over a network
 that does not manage addressing or routing. Spray is a novel random
 peer-sampling protocol that dynamically , quickly, and efficiently
@@ -306,4 +344,9 @@ users.
 
 * Skills
 
+This list is *not* an exhaustive list of skills. Most importantly, my
+knowledge of technologies decays over time, for most of them continue
+to iteratively improve. Nonetheless, here is a list of skills that I
+either (i) already know well or, (ii) would quickly learn again to be
+up-to-date.
 

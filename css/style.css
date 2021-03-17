@@ -65,6 +65,10 @@ a:visited {
     margin-left: calc(+1px + var(--left-margin));
 }
 
+#postamble {
+    margin-top: 64px;
+}
+
 .outline-text-2, .outline-text-3 {
     position: relative;
 }
@@ -80,11 +84,6 @@ pre {
     border-left: 1px dotted var(--nord3);
     padding-left: 8px;
     transform: translateY(50%);
-    /* width: 100px;*/
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    height: auto;
-    overflow: scroll;
 }
 
 nav {
