@@ -5,10 +5,20 @@
 
 #+OPTIONS: toc:nil
 #+OPTIONS: num:nil
+#+OPTIONS: prop:t
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/style.css" />
 #+HTML_HEAD: <script src="js/main.js"></script>
 
 * About
+:PROPERTIES:
+:ROAD:     87 Bd Gabriel Lauriol
+:CITY:     44300 Nantes, France
+:PHONE:    +33 6 79 90 42 26
+:MAIL:     brice.nedelec@gmail.com
+:GITHUB:   chat-wane
+:DRIVING:  B
+:BIRTH:    10/18/1988
+:END:
 
 Let me introduce myself: my name is Brice Nédelec; and this is my
 personal page, that is, mostly an elaborated curriculum vitae.
@@ -77,7 +87,14 @@ alert; a graphical user interface using Qt.
 
 * Publications
 
-** December 2018 Causal broadcast: how to forget? /Brice Nédelec, Pascal Molli, and Achour Mostéfaoui./ Proceedings of the 22nd International Conference on Principles of Distributed Systems (OPODIS).
+** Causal broadcast: how to forget?
+:PROPERTIES:
+:DATE:     December 2018
+:AUTHOR:   Brice Nédelec
+:AUTHOR:   Pascal Molli
+:AUTHOR:   Achour Mostéfaoui
+:PROCEEDINGS: 22nd OPODIS.
+:END:
 
 Causal broadcast constitutes a fundamental communication primitive of
 many distributed protocols and applications. However, state-of-the-art
@@ -93,7 +110,14 @@ only carry a scalar clock. Our implementation constitutes a
 sustainable communication primitive for causal broadcast in large and
 dynamic systems.
 
-** October 2018 Breaking the Scalability Barrier of Causal Broadcast in Large and Dynamic Systems. /Brice Nédelec, Pascal Molli, and Achour Mostéfaoui./ Proceedings of the 37th IEEE International Symposium on Reliable Distributed Systems (SRDS).
+** Breaking the Scalability Barrier of Causal Broadcast in Large and Dynamic Systems.
+:PROPERTIES:
+:DATE:     October 2018
+:AUTHOR:   Brice Nédelec
+:AUTHOR:   Pascal Molli
+:AUTHOR:   Achour Mostéfaoui
+:PROCEEDINGS: 37th SRDS
+:END:
 
 Many distributed protocols and applications rely on causal broadcast
 to ensure consistency criteria. However, none of causality tracking
@@ -106,7 +130,14 @@ the size of which is constant. We prove that for both static and
 dynamic systems. Consequently, large and dynamic systems can finally
 afford causal broadcast.
 
-** 2017 A scalable sequence encoding for collaborative editing. /Brice Nédelec, Pascal Molli, and Achour Mostéfaoui./ Concurrency and Computation: Practice and Experience, e4108.
+** A scalable sequence encoding for collaborative editing.
+:PROPERTIES:
+:DATE:     2017
+:AUTHOR:   Brice Nédelec
+:AUTHOR:   Pascal Molli
+:AUTHOR:   Achour Mostéfaoui
+:PROCEEDINGS: CCPE 4108
+:END:
 
 Distributed real-time editors made real-time editing easy for millions
 of users. However, main stream editors rely on Cloud services to
@@ -125,8 +156,17 @@ on large scale experiments involving up till 600 participants. As
 expected, the results show a traffic increasing as O((log I)^2 ln R)
 where I is the number of insertions in the document, and R the number
 of participants.
-
-** 2017 An Adaptive Peer-Sampling Protocol for Building Networks of Browsers. /Brice Nédelec, [[https://github.com/jutanke][Julian Tanke]], [[http://people.irisa.fr/Davide.Frey/][Davide Frey]], Pascal Molli, and Achour Mostéfaoui./ World Wide Web Journal.
+ 
+** An Adaptive Peer-Sampling Protocol for Building Networks of Browsers.
+:PROPERTIES:
+:DATE:     2017
+:AUTHOR:   Brice Nédelec
+:AUTHOR:   Julian Tanke
+:AUTHOR:   Davide Frey
+:AUTHOR:   Pascal Molli
+:AUTHOR:   Achour Mostéfaoui
+:PROCEEDINGS: WWWJ
+:END:
 
 Peer-sampling protocols constitute a fundamental mechanism for a
 number of large-scale distributed applications. The recent
@@ -145,7 +185,12 @@ significantly reduces the network traffic according to the number of
 participants and saves bandwidth.
 
 
-** October 2016 Collaborative editing in Web browsers. /Brice Nédelec./ Ph.D Manuscript.
+** Collaborative editing in Web browsers.
+:PROPERTIES:
+:DATE:     October 2016
+:AUTHOR:   Brice Nédelec
+:PROCEEDINGS: Ph.D manuscript
+:END:
 
 Collaborative editors allow users to distribute the writing of a
 document across space and time. Thanks to their ease of use, real-time
@@ -171,7 +216,14 @@ self-adjusts its functioning to the variations of network membership.
 collaborative editors running in Web browsers, we propose an editor
 using (i) and (ii), and we highlight its scalability.
 
-** April 2016 CRATE: Writing stories together with our browsers. /Brice Nédelec, Pascal Molli, and Achour Mostéfaoui./ Proceedings of the 25th International Conference Companion on World Wide Web, WWW’16 Companion.
+** CRATE: Writing stories together with our browsers.
+:PROPERTIES:
+:DATE:     April 2016
+:AUTHOR:   Brice Nédelec
+:AUTHOR:   Pascal Molli
+:AUTHOR:   Achour Mostéfaoui
+:PROCEEDINGS: WWW'16 Companion
+:END:
 
 Real-time collaborative editors are common tools to distribute work
 across space, time, and organizations. Unfortunately, mainstream
@@ -191,7 +243,15 @@ prevent the editor from oversizing routing tables, hence from letting
 small networks pay the price of large networks. This paper describes
 CRATE, its properties and its usage.
 
-** September 2017 LSEQ: an Adaptive Structure for Sequences in Distributed Collaborative Editing. /Brice Nédelec, Pascal Molli, Achour Mostéfaoui, and Emmanuel Desmontils./ Proceedings of the 13th ACM Symposium on Document Engineering.
+** LSEQ: an Adaptive Structure for Sequences in Distributed Collaborative Editing.
+:PROPERTIES:
+:DATE:     September 2017
+:AUTHOR:   Brice Nédelec
+:AUTHOR:   Pascal Molli
+:AUTHOR:   Achour Mostéfaoui
+:AUTHOR:   Emmanuel Desmontils
+:PROCEEDINGS: 13th DocEng
+:END:
 
 Distributed collaborative editing systems allow users to work
 distributed in time, space and across organizations. Trending
@@ -214,7 +274,15 @@ spatial-complexity whatever is the editing behaviour. A series of
 experiments validates LSEQ showing that it outperforms existing
 approaches.
 
-** September 2013 Concurrency effects over variable-size identifiers in distributed collaborative editing. /Brice Nédelec, Pascal Molli, Achour Mostéfaoui, and Emmanuel Desmontils./ In DChanges, volume 1008 of CEUR Workshop Proceedings.
+** Concurrency effects over variable-size identifiers in distributed collaborative editing.
+:PROPERTIES:
+:DATE:     September 2013
+:AUTHOR:   Brice Nédelec
+:AUTHOR:   Pascal Molli
+:AUTHOR:   Achour Mostéfaoui
+:AUTHOR:   Emmanuel Desmontils
+:PROCEEDINGS:   DChanges
+:END:
 
 Distributed collaborative editors such as Google Docs or Etherpad
 allow to distribute the work across time, space and organizations. In
@@ -237,4 +305,5 @@ validate our approach with simulations involving latency and multiple
 users.
 
 * Skills
+
 

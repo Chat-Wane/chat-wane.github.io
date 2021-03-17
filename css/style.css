@@ -65,6 +65,28 @@ a:visited {
     margin-left: calc(+1px + var(--left-margin));
 }
 
+.outline-text-2, .outline-text-3 {
+    position: relative;
+}
+
+pre {
+    position: absolute;
+    left: calc(5px + 100%);
+    color: var(--nord4);
+    border: none;
+    box-shadow: none;
+    /*bottom: calc(24px + 100%); /* 8+16 margin h2 + p */
+    bottom: 50%;
+    border-left: 1px dotted var(--nord3);
+    padding-left: 8px;
+    transform: translateY(50%);
+    /* width: 100px;*/
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    height: auto;
+    overflow: scroll;
+}
+
 nav {
     top: calc(-1*var(--left-margin));
     left: 0px;
