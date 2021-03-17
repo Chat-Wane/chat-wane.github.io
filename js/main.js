@@ -5,8 +5,45 @@ window.onresize = resizeNav
 function init () {
     createNav();
     highlightPre();
+    createArt();
 }
 
+
+function createArt() {
+    // createElement does not work for svg
+    const addr = "http://www.w3.org/2000/svg"
+    let art = document.createElementNS(addr, "svg");
+    let width = window.innerWidth;
+    let height = 150;
+    art.setAttribute("id", "art");
+    art.setAttribute("width", width);
+    art.setAttribute("height", height);
+    document.body.prepend(art);
+
+    let nodes = [{id: "1"}, {id: "2"}];
+    let links = [{source: "1", target: "2", value:"1"}];
+
+    nodes.forEach( (node) => {
+	let circle = document.createElementNS(addr, "circle");
+	circle.setAttribute("cx", 500);
+	circle.setAttribute("cy", 50);
+	circle.setAttribute("r",  20);
+	circle.setAttribute("fill", "green");
+	circle.setAttribute("id", node.id);
+	art.append(circle);
+    })
+
+    art.getElementById(nodes[1].id).setAttribute("cx", 1000);
+    art.getElementById(nodes[1].id).setAttribute("fill", "blue");
+    
+    // setInterval( () => {
+    // 	let pos = parseFloat(art.getElementById(nodes[1].id).getAttribute("cx"));
+    // 	art.getElementById(nodes[1].id).setAttribute("cx", pos + 10);
+    // }, 1000);
+}
+		 
+
+
 
 /**
  * Depending on screen, might be too light, onmouseover highlight
