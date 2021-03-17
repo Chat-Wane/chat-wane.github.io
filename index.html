@@ -1,522 +1,721 @@
-<html>
-  
-  <head>
-    <meta charset="utf-8">
-    <title>Brice Nédelec's homepage</title>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-03-17 Mer 15:39 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Brice NÉDELEC</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="chat-wane" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
 
-    <link rel="stylesheet"
-    	  href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-    	  integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-    	  crossorigin="anonymous">
-    
-    <link rel="stylesheet"
-	  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet"
-	  href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-	  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-	  crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-	    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-	    crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-	    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-	    crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-	    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-	    crossorigin="anonymous"></script>
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script src="js/main.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="js/main.js"></script>
-  </head>
-  
-  
-  <body onload="moveNavi(document.getElementById('navAbout'))">
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
 
-    <img id="navi" src="img/navi.gif">
-    
-    <nav>
-      <a id="navAbout" href="#About" onclick="moveNavi(this)">About</a>
-      <a id="navPublications" href="#Publications" onclick="moveNavi(this)">Publications</a>
-      <a id="navProjects" href="#Projects" onclick="moveNavi(this)">Projects</a>
-      <a id="navContact" href="#Contact" onclick="moveNavi(this)">Contact</a>
-    </nav>
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
 
-    <div id="vertical"></div>
-
-    <div id="main">
-    <div class="container">
-      <div class="row">
-	<div class="col-sm-12">
-	  <h1>Brice Nédelec</h1>
-	  - Ph.D. / Software architect
-	</div>
-      </div>
-
-      <div id="About" class="row">
-	<div class="col-sm-7">
-	  <h3>About <i class="fas fa-crow"></i></h3>
-	  <p>I currently hold a post-doctoral position at the University of
-	  Nantes, France, as a member of
-	  the <a href="https://www.ls2n.fr/equipe/gdd/">GDD team</a>. I work on
-	  a project that aims to build fully working distributed systems inside
-	  web browsers. In particular, I work on causal broadcast: a
-	  communication primitive of many distributed applications.
-          </p>
-
-	  <p>I got a Ph.D. in computer science from the University of Nantes,
-	  France, in 2016. The topic of this Ph.D. thesis was about
-	  decentralized collaborative editing in web browsers. This thesis was
-	  supervised by Prof. Pascal Molli, and Prof. Achour
-	  Mostéfaoui. Beforehand, I obtained a M.Sc. degree in software
-	  architecture from the University of Nantes in 2012.</p>
-	  
-	  <p>My research interests include, but are not limited to,
-	  decentralized protocols, causality tracking, and distributed
-	  collaborative editing. Overall, I am just interested in solving
-	  puzzles.</p>
-          <!-- Have more faith in animals than human kind.-->
-	</div>
-	<div class="col-sm-5">
-	  <img class="profile_pic" src="img/profile1.jpg"/>
-	</div>
-      </div>
-
-      <div id="Publications" class="row">
-	<div class="col-sm-12">
-	  <h3>Publications <i class="fas fa-pencil-ruler"></i></h3>
-
-	  <div class="container publication">
-	    <div class="row">
-	      <div class="col-sm-12">
-		<h4>Breaking the Scalability Barrier of Causal Broadcast in Large and Dynamic Systems
-		  [<a href="https://hal.inria.fr/hal-01778901/document">pdf</a>]
-		  [<a href="https://github.com/parchemins/paper-pcbroadcast-tex">tex</a>]
-		  [<a href="https://github.com/parchemins/slides-pcbroadcast-tex">slides</a>]
-		</h4>
-	      </div>	      
-	    </div>
-	    <div class="row">
-	      <div class="col-sm-4">
-		Brice Nédelec, Pascal Molli, and Achour Mostéfaoui<br />
-		October 2018<br />
-		<i>International Symposium on Reliable Distributed Systems</i>
-	      </div>
-	      <div class="col-sm-8">
-		Many distributed protocols and applications rely on
-		causal broadcast to ensure consistency
-		criteria. However, none of causality tracking
-		state-of-the-art approaches scale in large and dynamic
-		systems. This paper presents a new non-blocking causal
-		broadcast protocol suited for dynamic systems. The
-		proposed protocol outperforms state-of-the-art in size
-		of messages, execution time complexity, and local
-		space complexity. Most importantly, messages piggyback
-		control information the size of which is constant. We
-		prove that for both static and dynamic
-		systems. Consequently, large and dynamic systems can
-		finally afford causal broadcast.
-	      </div>
-	    </div>
-	  </div>	  
-	  
-	  
-	  <div class="container publication">
-	    <div class="row">
-	      <div class="col-sm-12">
-		<h4>A scalable sequence encoding for collaborative editing
-		  [<a href="https://hal.archives-ouvertes.fr/hal-01552799v2/document">pdf</a>]
-		  [<a href="https://github.com/parchemins/paper-crate-tex">tex</a>]</h4>
-	      </div>	      
-	    </div>
-	    <div class="row">
-	      <div class="col-sm-4">
-		Brice Nédelec, Pascal Molli, and Achour Mostéfaoui<br />
-		2017<br />
-		<i>Concurrency and Computation: Practice and Experience</i>
-	      </div>
-	      <div class="col-sm-8">
-		 Distributed real-time editors made real-time editing
-		 easy for millions of users. However, main stream
-		 editors rely on Cloud services to mediate sessions
-		 raising privacy and scalability issues. Decentralized
-		 editors tackle privacy issues but scalability issues
-		 remains. We aim to build a decentralized editor that
-		 allows real-time editing anytime, anywhere, whatever
-		 is the number of participants. In this paper, we
-		 propose an approach based on a massively replicated
-		 sequence data structure that represents the shared
-		 document. We establish an original tradeoff on
-		 communication, time and space complexity to maintain
-		 this sequence over a network of browsers. We prove a
-		 sublinear upper bound on communication complexity
-		 while preserving an affordable time and space
-		 complexity. In order to validate this tradeoff, we
-		 built a full working editor and measured its
-		 performance on large scale experiments involving up
-		 till 600 participants. As expected, the results show
-		 a traffic increasing as O((log I)^2 ln R) where I is
-		 the number of insertions in the document, and R the
-		 number of participants.
-	      </div>
-	    </div>
-	  </div>	  
-
-	  <div class="container publication">
-	    <div class="row">
-	      <div class="col-sm-12">
-		<h4>An Adaptive Peer-Sampling Protocol for Building Networks of Browsers
-		  [<a href="https://hal.inria.fr/hal-01619906/document">pdf</a>]
-		  [<a href="https://github.com/parchemins/paper-spray-tex">tex</a>]</h4>
-	      </div>	      
-	    </div>
-	    <div class="row">
-	      <div class="col-sm-4">
-		Brice Nédelec, Julian Tanke, Davide Frey, Pascal Molli, and Achour Mostéfaoui<br />
-		2017<br />
-		<i>World Wide Web Journal</i>
-	      </div>
-	      <div class="col-sm-8">
-		Peer-sampling protocols constitute a fundamental
-		mechanism for a number of large-scale distributed
-		applications. The recent introduction of WebRTC
-		facilitated the deployment of decentralized
-		applications over a network of browsers. However,
-		deploying existing peer-sampling protocols on top of
-		We-bRTC raises issues about their lack of adaptiveness
-		to sudden bursts of popularity over a network that
-		does not manage addressing or routing. Spray is a
-		novel random peer-sampling protocol that dynamically ,
-		quickly, and efficiently self-adapts to the network
-		size. Our experiments show the flexibility of Spray
-		and highlight its efficiency improvements at the cost
-		of small overhead. We embedded Spray in a real-time
-		decentralized editor running in brow-sers and ran
-		experiments involving up to 600 communicating web
-		browsers. The results demonstrate that Spray
-		significantly reduces the network traffic according to
-		the number of participants and saves bandwidth.
-	      </div>
-	    </div>
-	  </div>
-
-
-
-	  
-	  <div class="container publication">
-	    <div class="row">
-	      <div class="col-sm-12">
-		<h4>Collaborative editing in Web browsers
-		  [<a href="https://hal.archives-ouvertes.fr/tel-01387581/document">pdf</a>]
-		  [<a href="https://github.com/parchemins/thesis-tex">tex</a>]
-		  [<a href="https://github.com/parchemins/def-thesis-tex">slides</a>]</h4>
-	      </div>	      
-	    </div>
-	    <div class="row">
-	      <div class="col-sm-4">
-		Brice Nédelec<br />
-		October 2016<br />
-		<i>Ph.D. manuscript</i>
-	      </div>
-	      <div class="col-sm-8">
-		<p>Collaborative editors allow users to distribute the
-		  writing of a document across space and time. Thanks to
-		  their ease of use, real-time collaborative editors
-		  working in Web browsers vastly contributed to the
-		  adoption of such tools. However, current editors are
-		  centralized: a service provider's server hosts an
-		  editing session. It raises privacy and scalability
-		  issues.</p>
-		<p> Recently, the enabling of browser-to-browser connection
-		  establishments opened new opportunities in favor of a
-		  decentralized Web. Decentralized real-time collaborative
-		  editors working in Web browsers must efficiently handle highly
-		  dynamic groups of different size.</p>
-		<p>Contritributions of this thesis are threefold: (i)
-		  To represent the document, we propose a replicated
-		  data structure for sequences using metadata the size
-		  of which scales sub-linearly compared to the number
-		  of inserted characters.  (ii) To efficiently
-		  propagate the changes to all editors involved in the
-		  collaborative writing, we propose a random peer
-		  sampling protocol that supports Web browsers
-		  constraints and self-adjusts its functioning to the
-		  variations of network membership.  (iii) To
-		  demonstrate the feasibility of a decentralized
-		  real-time collaborative editors running in Web
-		  browsers, we propose an editor using (i) and (ii),
-		  and we highlight its scalability.</p>
-	      </div>
-	    </div>
-	  </div>
-
-	  <div class="container publication">
-	    <div class="row">
-	      <div class="col-sm-12">
-		<h4>CRATE: Writing stories together with our browsers
-		  [<a href="https://hal.archives-ouvertes.fr/hal-01303333/document">pdf</a>]
-		  [<a href="https://github.com/parchemins/demo-crate-tex">tex</a>]</h4>
-	      </div>	      
-	    </div>
-	    <div class="row">
-	      <div class="col-sm-4">
-		Brice Nédelec, Pascal Molli, and Achour Mostéfaoui<br />
-		April 2016<br />
-		<i>Proceedings of the 25th International Conference Companion on
-		  World Wide Web, WWW'16 Companion</i>
-	      </div>
-	      <div class="col-sm-8">
-		Real-time collaborative editors are common tools to distribute
-		work across space, time, and organizations. Unfortunately,
-		mainstream editors such as Google Docs rely on central servers
-		and raises privacy and scalability issues. CRATE is a real-time
-		decentralized collaborative editor that runs directly in web
-		browsers thanks to WebRTC. Compared to state-of-the-art, CRATE
-		is the first real-time editor that only requires browsers in
-		order to support collaborative editing and to transparently
-		handle from small to large groups of users. Consequently, CRATE
-		can also be used in massive online lectures, TV shows or large
-		conferences to allow users to share their notes. CRATE's
-		properties rely on two scientific results: (i) a replicated
-		sequence structure with sub-linear upper bound on space
-		complexity; this prevents the editor from running costly
-		distributed garbage collectors, (ii) an adaptive peer sampling
-		protocol; this prevent the editor from oversizing routing
-		tables, hence from letting small networks pay the price of large
-		networks. This paper describes CRATE, its properties and its
-		usage.
-	      </div>
-	    </div>
-	  </div>
-
-	  <div class="container publication">
-	    <div class="row">
-	      <div class="col-sm-12">
-		<h4>LSEQ: an Adaptive Structure for Sequences in Distributed
-		  Collaborative Editing
-		  [<a href="https://hal.archives-ouvertes.fr/hal-00921633/document">pdf</a>]
-		  [<a href="https://github.com/parchemins/paper-lseq-tex">tex</a>]</h4>
-	      </div>	      
-	    </div>
-	    <div class="row">
-	      <div class="col-sm-4">
-		Brice Nédelec, Pascal Molli, and Achour Mostéfaoui<br />
-		September 2013<br />
-		<i>13th ACM Symposium on Document Engineering</i>
-	      </div>
-	      <div class="col-sm-8">
-		Distributed collaborative editing systems allow users to work
-		distributed in time, space and across organizations. Trending
-		distributed collaborative editors such as Google Docs, Etherpad
-		or Git have grown in popularity over the years. A new kind of
-		distributed editors based on a family of distributed data
-		structure replicated on several sites called Conflict-free
-		Replicated Data Type (CRDT for short) appeared recently. This
-		paper considers a CRDT that represents a distributed sequence of
-		basic elements that can be lines, words or characters (sequence
-		CRDT). The possible operations on this sequence are the
-		insertion and the deletion of elements. Compared to the state of
-		the art, this approach is more decentralized and better scales
-		in terms of the number of participants. However, its space
-		complexity is linear with respect to the total number of inserts
-		and the insertion points in the document. This makes the overall
-		performance of such editors dependent on the editing behaviour
-		of users. This paper proposes and models LSEQ, an adaptive
-		allocation strategy for a sequence CRDT. LSEQ achieves in the
-		average a sub-linear spatial-complexity whatever is the editing
-		behaviour. A series of experiments validates LSEQ showing that
-		it outperforms existing approaches.
-	      </div>
-	    </div>
-	  </div>
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
 
 
-	  <div class="container publication">
-	    <div class="row">
-	      <div class="col-sm-12">
-		<h4>Concurrency effects over variable-size identifiers in
-		  distributed collaborative editing
-		  [<a href="https://hal.archives-ouvertes.fr/hal-00921655/document">pdf</a>]
-		  [<a href="https://github.com/parchemins/paper-hlseq-tex">tex</a>]</h4>
-	      </div>	      
-	    </div>
-	    <div class="row">
-	      <div class="col-sm-4">
-		Brice Nédelec, Pascal Molli, and Achour Mostéfaoui<br />
-		September 2013<br />
-		<i>DChanges, volume 1008 of CEUR Workshop Proceedings</i>
-	      </div>
-	      <div class="col-sm-8">
-		Distributed collaborative editors such as Google Docs or
-		Etherpad allow to distribute the work across time, space and
-		organizations. In this paper, we focus on distributed
-		collaborative editors based on the Conflict-free Replicated Data
-		Type approach (CRDT). CRDTs encompass a set of well-known data
-		types (sets, graphs, sequences, etc.). CRDTs for sequences model
-		a document as a set of elements (character, line, paragraph,
-		etc.) with unique identifiers, providing two commutative update
-		operations: insert and delete. The identifiers of elements can
-		be either of fixed-size or variable-size. Recently, a strategy
-		for assigning variable-size identifiers called LSEQ has been
-		proposed for CRDTs for sequences. LSEQ lowers the space
-		complexity of variable-size identifiers CRDTs from linear to
-		sub-linear. While experiments show that it works locally, it
-		fails to provide this bound with multiple users and latency. In
-		this paper, we propose h-LSEQ, an improvement of LSEQ that
-		preserves its space complexity among all collaborators,
-		regardless of the latency. Ultimately, this improvement allows
-		to safely build distributed collaborative editors based on
-		CRDTs. We validate our approach with simulations involving
-		latency and multiple users.
-	      </div>
-	    </div>
-	  </div>
-	</div>
-      </div>
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Brice NÉDELEC</h1>
 
-      <div id="Projects" class="row">
-	<div class="col-sm-12">
-	  <h3>Projects <i class="fas fa-palette"></i></h3>
-	  I had a lot of projects, but most of them are unfinished business...
-          
-	  <div class="container publication">
-	    <div class="row">
-	      <div class="col-sm-12">
-		<h4>The Gravedigger
-                  [<a href="https://github.com/Chat-Wane/Gravedigger">code</a>]</h4>
-	      </div>	      
-	    </div>
-	    <div class="row">
-	      <div class="col-sm-4">
-		Chat-Wane, Driz, Xzwop <br/>
-                <img class="projects" src="img/scene-1.png">
-	      </div>
-	      <div class="col-sm-8">
-                <p>Gravedigger is a plateformer game where the main character, a
-                  gravedigger, tries to keep his job. Indeed, the scientists
-                  recently discovered a way to brutally improve the life
-                  expectancy of the human kind. As a consequence, the corpses
-                  become rare. Gravediggers lose in utility. Tackling this
-                  problem, Gravedigger starts a mighty quest to discover a holy
-                  virus. He hopes that, with the epidemic, the flow of corpses
-                  will be back...</p>
-                <p><i>Not even close to be finished, but the idea is still
-                    appealing, and a lot of ideas are still written and stored for
-                    later use. Hopefully!</i></p>
-	      </div>
-	    </div>
-	  </div>
-          
-          
-	  <div class="container publication">
-	    <div class="row">
-	      <div class="col-sm-12">
-		<h4>A CollaboRATive Editor: CRATE
-                  [<a href="https://github.com/Chat-Wane/CRATE">code</a>]</h4>
-	      </div>	      
-	    </div>
-	    <div class="row">
-	      <div class="col-sm-4">
-		Chat-Wane<br/>
-                <img class="projects" src="img/screenshot.png">
-	      </div>
-	      <div class="col-sm-8">
-                <p>CRATE aims to enable collaborative editing anywhere, at
-                anytime, whatever the number of participants, without third
-                party. Compared to Google Docs, (i) CRATE does not limit the
-                number of simultaneous users, (ii) CRATE does not rely on
-                service providers, thus your documents belong to you and whom
-                you trust, (iii) CRATE does not include all text editing
-                capabilities.</p>
-                <p><i>This is a years long project that summarizes my
-                Ph.D. thesis. It comprises network management, causality
-                tracking, consistency criteria, and even graphical user
-                interface (not my forte). The project is still buggy. A lot of
-                improvements have to be done, for the sake of resilience. But I
-                am done with it!  It worked as intended: a proof of
-                concept.</i></p>
-	      </div>
-	    </div>
-	  </div>
+<div id="outline-container-org5a3e49d" class="outline-2">
+<h2 id="org5a3e49d">About</h2>
+<div class="outline-text-2" id="text-org5a3e49d">
+<pre class="example">
+ROAD: 87 Bd Gabriel Lauriol
+CITY: 44300 Nantes, France
+PHONE: +33 6 79 90 42 26
+MAIL: brice.nedelec@gmail.com
+GITHUB: chat-wane
+DRIVING: B
+BIRTH: 10/18/1988
+</pre>
 
-          
-          <div class="container publication">
-	    <div class="row">
-	      <div class="col-sm-12">
-		<h4>Super Wind Breaker</h4>
-	      </div>	      
-	    </div>
-	    <div class="row">
-	      <div class="col-sm-4">
-		Chat-Wane, Driz, Xzwop<br/>
-                <img class="projects" src="img/main_menu.png">
-	      </div>
-	      <div class="col-sm-8">
-                <p>Super Wind Breaker is a party game designed for 2-4 players
-                where two sides fight against each other. The rectangular
-                playground is vertically divided and fully closed. Each opponent
-                tries to fire a ball at the other end of the playground. A
-                destroyable wall of bricks protects each end.  The cast is
-                composed of 8 characters (hopefully). Each of these characters
-                has specific properties (e.g. the layer of the wall of bricks,
-                the movement speed, the special abilities).</p>
-                <p><i>This project is less ambitious than others and
-                    could be released in a first pre-alpha version in
-                    a few months. It's planned!</i></p>
-	      </div>
-	    </div>
-	  </div>
+<p>
+Let me introduce myself: my name is Brice Nédelec; and this is my
+personal page, that is, mostly an elaborated curriculum vitae.
+</p>
+
+<p>
+In 2016, I obtained a Ph.D in computer science from the
+<a href="https://www.univ-nantes.fr/">University of Nantes</a> in France under
+the supervision of Pr. <a href="https://sites.google.com/view/pascal-molli">Pascal Molli</a>, and Pr. <a href="https://www.univ-nantes.fr/achour-mostefaoui">Achour Mostéfaoui</a>; and
+with the helpful advice of Dr. <a href="https://www.univ-nantes.fr/emmanuel-desmontils">Emmanuel Desmontils</a> in early
+stages. The topic was about giving back their ownership to authors of
+documents by decentralizing the collaborative editing done in Web
+browsers.
+</p>
+
+<p>
+My research interests include, but are not limited to, communication,
+consistency, and causality. While these topics mostly originate from
+my Ph.D about decentralized collaborative editors, I am deeply
+interested in the broader theme of distributed protocols. I like to
+understand, extract, and abstract the pieces that compose a
+middleware. Overall, I am just interested in solving puzzles.
+</p>
+
+<p>
+Since forever, my personal interests expand to all sorts of arts. My
+trinity consists in music, painting, and gaming, for, at times, I
+strum some strings and wipe some brushes.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org921aeee" class="outline-2">
+<h2 id="org921aeee">Education</h2>
+<div class="outline-text-2" id="text-org921aeee">
+</div>
+<div id="outline-container-org964c52a" class="outline-3">
+<h3 id="org964c52a">2012 - 2016 Doctorate in computer science. <i>Laboratoire d'Informatique de Nantes Atlantique (LINA), UFR Sciences et Techniques, Nantes, France.</i></h3>
+</div>
+
+<div id="outline-container-org9ef7151" class="outline-3">
+<h3 id="org9ef7151">2009 - 2012 Master degree in software architecture. <i>UFR Sciences et Techniques, Nantes, France &amp; Dundalk Institute of Technology, Dundalk, Ireland.</i></h3>
+</div>
+
+<div id="outline-container-orgff271e2" class="outline-3">
+<h3 id="orgff271e2">2006 - 2009 Bachelor in computer science. <i>UFR Sciences et Techniques, Nantes, France.</i></h3>
+</div>
+
+<div id="outline-container-orgbb8eb26" class="outline-3">
+<h3 id="orgbb8eb26">2006 Baccalaureate in science. <i>Lycée Notre-Dame de Toutes Aides, Nantes, France.</i></h3>
+</div>
+</div>
+
+<div id="outline-container-org65c2613" class="outline-2">
+<h2 id="org65c2613">Experience</h2>
+<div class="outline-text-2" id="text-org65c2613">
+</div>
+<div id="outline-container-orgabeea17" class="outline-3">
+<h3 id="orgabeea17">A Green Label for Microservices Architectures.</h3>
+<div class="outline-text-3" id="text-orgabeea17">
+<pre class="example">
+UNTIL: March 2021
+FROM: September 2019
+</pre>
+
+<p>
+A software architect position at <a href="https://www.sigma.fr/">Sigma Informatique</a> in
+La-Chapelle-sur-Erdre, France. This project aimed at enhancing
+microservices architectures in order to include end users in the
+decision processes about their energy consumption.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd2a4e81" class="outline-3">
+<h3 id="orgd2a4e81">Building a Web of Browsers.</h3>
+<div class="outline-text-3" id="text-orgd2a4e81">
+<pre class="example">
+UNTIL: December 2018
+FROM: March 2017
+</pre>
+
+<p>
+A post-doctoral position at LINA laboratory in Nantes, France. The
+topics were about causality tracking in unstructured networks, and
+broadcasting as a communication primitive for large scale networks
+subject to dynamic changes.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org585e1fe" class="outline-3">
+<h3 id="org585e1fe">Distributed and decentralized collaborative editing in Web browsers.</h3>
+<div class="outline-text-3" id="text-org585e1fe">
+<pre class="example">
+UNTIL: October 2016
+FROM: October 2012
+</pre>
+
+<p>
+As a Ph.D student and member of the <a href="https://www.ls2n.fr/equipe/gdd/">GDD team</a>, at LINA laboratory in
+Nantes, France, under the supervision of Pr. Pascal Molli and
+Pr. Achour Mostéfaoui. The topics ranged from replicated data
+structures, to decentralized network membership protocols, and large
+scale collaborative editing in Web browsers.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga3a2c21" class="outline-3">
+<h3 id="orga3a2c21">Teaching assistant.</h3>
+<div class="outline-text-3" id="text-orga3a2c21">
+<pre class="example">
+UNTIL: June 2014
+FROM: October 2013
+</pre>
+
+<p>
+I was teaching at the <a href="https://iutnantes.univ-nantes.fr/">Institute of Technology</a> of Nantes in France to
+first year students. The courses included Swing, AWT, as well as
+JavaScript, CSS, and HTML.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org44508a8" class="outline-3">
+<h3 id="org44508a8">On the space complexity of Logoot's identifiers.</h3>
+<div class="outline-text-3" id="text-org44508a8">
+<pre class="example">
+UNTIL: August 2012
+FROM: March 2012
+</pre>
+
+<p>
+An internship that would later lead to a Ph.D! Logoot is a distributed
+data structure that allows writers to collaboratively and concurrently
+edit text documents. This data structure needs identifiers to avoid
+the difficult and error-prone task of solving editing conflicts. I
+studied ways to reduce the size of such identifiers.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2e21280" class="outline-3">
+<h3 id="org2e21280">Design and development of a metrology software in C++.</h3>
+<div class="outline-text-3" id="text-org2e21280">
+<pre class="example">
+UNTIL: June 2009
+FROM: April 2009
+</pre>
+
+<p>
+Nothing new: monitoring is essential. This was an internship at <a href="https://www.univ-nantes.fr/plans-des-campus/iut-de-nantes-campus-la-fleuriaye">IUT,
+site de la Fleuriaye</a>, Carquefou, France. Developing such metrology
+tool to monitor software licences implied data aggregation; export and
+alert; a graphical user interface using Qt.
+</p>
+
+<p>
+
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd2f53c7" class="outline-2">
+<h2 id="orgd2f53c7">Publications</h2>
+<div class="outline-text-2" id="text-orgd2f53c7">
+</div>
+<div id="outline-container-orgea2aba2" class="outline-3">
+<h3 id="orgea2aba2">Causal broadcast: how to forget?</h3>
+<div class="outline-text-3" id="text-orgea2aba2">
+<pre class="example">
+DATE: December 2018
+AUTHOR: Brice Nédelec
+AUTHOR: Pascal Molli
+AUTHOR: Achour Mostéfaoui
+PROCEEDINGS: 22nd OPODIS.
+</pre>
+
+<p>
+Causal broadcast constitutes a fundamental communication primitive of
+many distributed protocols and applications. However, state-of-the-art
+implementations fail to forget obsolete control information about
+already delivered messages. They do not scale in large and dynamic
+systems. In this paper, we propose a novel implementation of causal
+broadcast. We prove that all and only obsolete control information is
+safely removed, at cost of a few lightweight control messages. The
+local space complexity of this protocol does not monotonically
+increase and depends at each moment on the number of messages still in
+transit and the degree of the communication graph. Moreover, messages
+only carry a scalar clock. Our implementation constitutes a
+sustainable communication primitive for causal broadcast in large and
+dynamic systems.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org55d86f6" class="outline-3">
+<h3 id="org55d86f6">Breaking the Scalability Barrier of Causal Broadcast in Large and Dynamic Systems.</h3>
+<div class="outline-text-3" id="text-org55d86f6">
+<pre class="example">
+DATE: October 2018
+AUTHOR: Brice Nédelec
+AUTHOR: Pascal Molli
+AUTHOR: Achour Mostéfaoui
+PROCEEDINGS: 37th SRDS
+</pre>
+
+<p>
+Many distributed protocols and applications rely on causal broadcast
+to ensure consistency criteria. However, none of causality tracking
+state-of-the-art approaches scale in large and dynamic systems. This
+paper presents a new non-blocking causal broadcast protocol suited for
+dynamic systems. The proposed protocol outperforms state-of-the-art in
+size of messages, execution time complexity, and local space
+complexity. Most importantly, messages piggyback control information
+the size of which is constant. We prove that for both static and
+dynamic systems. Consequently, large and dynamic systems can finally
+afford causal broadcast.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgba972f6" class="outline-3">
+<h3 id="orgba972f6">A scalable sequence encoding for collaborative editing.</h3>
+<div class="outline-text-3" id="text-orgba972f6">
+<pre class="example">
+DATE: 2017
+AUTHOR: Brice Nédelec
+AUTHOR: Pascal Molli
+AUTHOR: Achour Mostéfaoui
+PROCEEDINGS: CCPE 4108
+</pre>
+
+<p>
+Distributed real-time editors made real-time editing easy for millions
+of users. However, main stream editors rely on Cloud services to
+mediate sessions raising privacy and scalability issues. Decentralized
+editors tackle privacy issues but scalability issues remains. We aim
+to build a decentralized editor that allows real-time editing anytime,
+anywhere, whatever is the number of participants. In this paper, we
+propose an approach based on a massively replicated sequence data
+structure that represents the shared document. We establish an
+original trade-off on communication, time and space complexity to
+maintain this sequence over a network of browsers. We prove a
+sublinear upper bound on communication complexity while preserving an
+affordable time and space complexity. In order to validate this
+trade-off, we built a full working editor and measured its performance
+on large scale experiments involving up till 600 participants. As
+expected, the results show a traffic increasing as O((log I)<sup>2</sup> ln R)
+where I is the number of insertions in the document, and R the number
+of participants.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9836f91" class="outline-3">
+<h3 id="org9836f91">An Adaptive Peer-Sampling Protocol for Building Networks of Browsers.</h3>
+<div class="outline-text-3" id="text-org9836f91">
+<pre class="example">
+DATE: 2017
+AUTHOR: Brice Nédelec
+AUTHOR: Julian Tanke
+AUTHOR: Davide Frey
+AUTHOR: Pascal Molli
+AUTHOR: Achour Mostéfaoui
+PROCEEDINGS: WWWJ
+</pre>
+
+<p>
+Peer-sampling protocols constitute a fundamental mechanism for a
+number of large-scale distributed applications. The recent
+introduction of WebRTC facilitated the deployment of decentralized
+applications over a network of browsers. However, deploying existing
+peer-sampling protocols on top of WebRTC raises issues about their
+lack of adaptiveness to sudden bursts of popularity over a network
+that does not manage addressing or routing. Spray is a novel random
+peer-sampling protocol that dynamically , quickly, and efficiently
+self-adapts to the network size. Our experiments show the flexibility
+of Spray and highlight its efficiency improvements at the cost of
+small overhead. We embedded Spray in a real-time decentralized editor
+running in brow-sers and ran experiments involving up to 600
+communicating web browsers. The results demonstrate that Spray
+significantly reduces the network traffic according to the number of
+participants and saves bandwidth.
+</p>
+</div>
+</div>
 
 
-	  <div class="container publication">
-	    <div class="row">
-	      <div class="col-sm-12">
-		<h4>Brocéliande
-                  [<a href="https://github.com/korriganed/broceliande">code</a>]</h4>
-	      </div>	      
-	    </div>
-	    <div class="row">
-	      <div class="col-sm-4">
-		Chat-Wane, Driz<br/>
-	      </div>
-	      <div class="col-sm-8">
-		<p>This project provides a Java implementation of
-		random forests. Random forests use training sets to
-		build decision trees. Given an input (e.g. a person
-		with age, gender, medical background, symptoms) the
-		result (e.g. a disease) of which is unknown, random
-		forests are able to predict the corresponding
-		result.</p>
-		<p><i>This is just a small step in the vast field of
-		artifical intelligence.</i></p>
-	      </div>
-	    </div>
-	  </div>
-          
-          
-	</div>
-      </div>
+<div id="outline-container-orgbbd4df4" class="outline-3">
+<h3 id="orgbbd4df4">Collaborative editing in Web browsers.</h3>
+<div class="outline-text-3" id="text-orgbbd4df4">
+<pre class="example">
+DATE: October 2016
+AUTHOR: Brice Nédelec
+PROCEEDINGS: Ph.D manuscript
+</pre>
 
-      <div id="Contact" class="row">
-	<div class="col-sm-12">
-	  <h3>Contact <i class="fas fa-mail-bulk"></i></h3>
-	  
-	  <p><i class="fas fa-envelope"></i> brice.nedelec at ls2n.fr</p>
-	  <p><i class="fas fa-envelope"></i> brice.nedelec at gmail.com</p>
-	  <br/>
-	  <p><i class="fab fa-github-square"></i> <a href="https://github.com/chat-wane">chat-wane</a></p>
-	  <br/>
-	  <p><i class="fas fa-briefcase"></i> Laboratoire des Sciences du Numérique de Nantes (LS2N) <br/>
-	      Université de Nantes – Faculté des Sciences et Techniques (FST) <br/>
-	      Office: 34-411 <br/>
-	      2 Chemin de la Houssinière <br/>
-	      BP 92208, 44322 Nantes Cedex 3 <br/>
-	  </p>
-	</div>
-      </div>
-      
-    </div>
-    </div>
-    
-  </body>
-  
+<p>
+Collaborative editors allow users to distribute the writing of a
+document across space and time. Thanks to their ease of use, real-time
+collaborative editors working in Web browsers vastly contributed to
+the adoption of such tools. However, current editors are centralized:
+a service provider's server hosts an editing session. It raises
+privacy and scalability issues.
+</p>
+
+<p>
+Recently, the enabling of browser-to-browser connection establishments
+opened new opportunities in favor of a decentralized
+Web. Decentralized real-time collaborative editors working in Web
+browsers must efficiently handle highly dynamic groups of different
+size.
+</p>
+
+<p>
+Contritributions of this thesis are threefold: (i) To represent the
+document, we propose a replicated data structure for sequences using
+metadata the size of which scales sub-linearly compared to the number
+of inserted characters.  (ii) To efficiently propagate the changes to
+all editors involved in the collaborative writing, we propose a random
+peer sampling protocol that supports Web browsers constraints and
+self-adjusts its functioning to the variations of network membership.
+(iii) To demonstrate the feasibility of a decentralized real-time
+collaborative editors running in Web browsers, we propose an editor
+using (i) and (ii), and we highlight its scalability.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgeccfb9d" class="outline-3">
+<h3 id="orgeccfb9d">CRATE: Writing stories together with our browsers.</h3>
+<div class="outline-text-3" id="text-orgeccfb9d">
+<pre class="example">
+DATE: April 2016
+AUTHOR: Brice Nédelec
+AUTHOR: Pascal Molli
+AUTHOR: Achour Mostéfaoui
+PROCEEDINGS: WWW'16 Companion
+</pre>
+
+<p>
+Real-time collaborative editors are common tools to distribute work
+across space, time, and organizations. Unfortunately, mainstream
+editors such as Google Docs rely on central servers and raises privacy
+and scalability issues. CRATE is a real-time decentralized
+collaborative editor that runs directly in web browsers thanks to
+WebRTC. Compared to state-of-the-art, CRATE is the first real-time
+editor that only requires browsers in order to support collaborative
+editing and to transparently handle from small to large groups of
+users. Consequently, CRATE can also be used in massive online
+lectures, TV shows or large conferences to allow users to share their
+notes. CRATE's properties rely on two scientific results: (i) a
+replicated sequence structure with sub-linear upper bound on space
+complexity; this prevents the editor from running costly distributed
+garbage collectors, (ii) an adaptive peer sampling protocol; this
+prevent the editor from oversizing routing tables, hence from letting
+small networks pay the price of large networks. This paper describes
+CRATE, its properties and its usage.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org36f237c" class="outline-3">
+<h3 id="org36f237c">LSEQ: an Adaptive Structure for Sequences in Distributed Collaborative Editing.</h3>
+<div class="outline-text-3" id="text-org36f237c">
+<pre class="example">
+DATE: September 2017
+AUTHOR: Brice Nédelec
+AUTHOR: Pascal Molli
+AUTHOR: Achour Mostéfaoui
+AUTHOR: Emmanuel Desmontils
+PROCEEDINGS: 13th DocEng
+</pre>
+
+<p>
+Distributed collaborative editing systems allow users to work
+distributed in time, space and across organizations. Trending
+distributed collaborative editors such as Google Docs, Etherpad or Git
+have grown in popularity over the years. A new kind of distributed
+editors based on a family of distributed data structure replicated on
+several sites called Conflict-free Replicated Data Type (CRDT for
+short) appeared recently. This paper considers a CRDT that represents
+a distributed sequence of basic elements that can be lines, words or
+characters (sequence CRDT). The possible operations on this sequence
+are the insertion and the deletion of elements. Compared to the state
+of the art, this approach is more decentralized and better scales in
+terms of the number of participants. However, its space complexity is
+linear with respect to the total number of inserts and the insertion
+points in the document. This makes the overall performance of such
+editors dependent on the editing behaviour of users. This paper
+proposes and models LSEQ, an adaptive allocation strategy for a
+sequence CRDT. LSEQ achieves in the average a sub-linear
+spatial-complexity whatever is the editing behaviour. A series of
+experiments validates LSEQ showing that it outperforms existing
+approaches.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org521b643" class="outline-3">
+<h3 id="org521b643">Concurrency effects over variable-size identifiers in distributed collaborative editing.</h3>
+<div class="outline-text-3" id="text-org521b643">
+<pre class="example">
+DATE: September 2013
+AUTHOR: Brice Nédelec
+AUTHOR: Pascal Molli
+AUTHOR: Achour Mostéfaoui
+AUTHOR: Emmanuel Desmontils
+PROCEEDINGS: DChanges
+</pre>
+
+<p>
+Distributed collaborative editors such as Google Docs or Etherpad
+allow to distribute the work across time, space and organizations. In
+this paper, we focus on distributed collaborative editors based on the
+Conflict-free Replicated Data Type approach (CRDT). CRDTs encompass a
+set of well-known data types (sets, graphs, sequences, etc.). CRDTs
+for sequences model a document as a set of elements (character, line,
+paragraph, etc.) with unique identifiers, providing two commutative
+update operations: insert and delete. The identifiers of elements can
+be either of fixed-size or variable-size. Recently, a strategy for
+assigning variable-size identifiers called LSEQ has been proposed for
+CRDTs for sequences. LSEQ lowers the space complexity of variable-size
+identifiers CRDTs from linear to sub-linear. While experiments show
+that it works locally, it fails to provide this bound with multiple
+users and latency. In this paper, we propose h-LSEQ, an improvement of
+LSEQ that preserves its space complexity among all collaborators,
+regardless of the latency. Ultimately, this improvement allows to
+safely build distributed collaborative editors based on CRDTs. We
+validate our approach with simulations involving latency and multiple
+users.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org94e44a8" class="outline-2">
+<h2 id="org94e44a8">Skills</h2>
+<div class="outline-text-2" id="text-org94e44a8">
+<p>
+This list is <b>not</b> an exhaustive list of skills. Most importantly, my
+knowledge of technologies decays over time, for most of them continue
+to iteratively improve. Nonetheless, here is a list of skills that I
+either (i) already know well or, (ii) would quickly learn again to be
+up-to-date.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2021-03-11 Jeu 00:00</p>
+<p class="author">Author: chat-wane</p>
+<p class="date">Created: 2021-03-17 Mer 15:39</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
 </html>
