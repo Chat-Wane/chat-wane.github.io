@@ -1,6 +1,24 @@
 
-window.onload = createNav
+window.onload = init
 window.onresize = resizeNav
+
+function init () {
+    createNav();
+    highlightPre();
+}
+
+
+/**
+ * Depending on screen, might be too light, onmouseover highlight
+ * the text within.
+ */
+function highlightPre() {
+    let pres = document.getElementsByTagName("pre");
+    for (let i = 0; i < pres.length; ++i) {
+	pres[i].onmouseover = () => pres[i].style.color = "var(--nord3)";	
+	pres[i].onmouseout  = () => pres[i].style.color = "var(--nord4)";
+    }
+}
 
 
 
