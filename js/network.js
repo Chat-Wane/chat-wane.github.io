@@ -19,8 +19,8 @@ class Node {
 
 class Network {
 
-    static V = 0.005; // velocity factor
-    static R = 50; // distance to link
+    static V = 0.002; // velocity factor
+    static R = 60; // distance to link
     static C = 0.005; // change direction
     
     constructor(number, width, height) {
