@@ -48,8 +48,6 @@ body {
     background-color: white;
     color: var(--nord3);
     font-family: "Iosevka";
-    width: 720px;
-    margin:auto;    
     counter-reset: section;
 }
 
@@ -71,7 +69,10 @@ a:visited {
 }
 
 #content, #postamble {
-    margin-left: calc(+1px + var(--left-margin));
+    width: 720px;
+    padding-left: calc(+1px + var(--left-margin));
+    margin:auto;
+    
 }
 
 #postamble {

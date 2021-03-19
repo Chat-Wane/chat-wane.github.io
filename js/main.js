@@ -2,6 +2,7 @@
 window.onload = init
 window.onresize = resize
 
+
 let HEIGHT = 150;
 let net = new Network(Math.round(window.innerWidth/10),
 		      window.innerWidth, HEIGHT);
@@ -21,8 +22,8 @@ function resize () {
 
 function resizeArt() {
     let art = document.getElementById("art");
-    art.setAttribute("width", window.innerWidth);
-    net.width = window.innerWidth;
+    art.setAttribute("width", document.body.scrollWidth);
+    net.width = document.body.scrollWidth;
 }
 
 function createArt() {
@@ -30,11 +31,11 @@ function createArt() {
     const addr = "http://www.w3.org/2000/svg"
     let art = document.createElementNS(addr, "svg");
     art.setAttribute("id", "art");
-    art.setAttribute("width", window.innerWidth);
+    art.setAttribute("width", document.body.scrollWidth);
     art.setAttribute("height", HEIGHT);
     document.body.prepend(art);
 
-    net.width = window.innerWidth;
+    net.width = document.body.scrollWidth;
     net.height = HEIGHT;
 
     // create nodes
@@ -118,7 +119,7 @@ function highlightPre() {
  */
 function resizeNav() {
     let nav = document.getElementsByTagName("nav")[0];
-    nav.style.width = window.innerHeight + "px";
+    nav.style.width = document.body.clientHeight + "px";
     
     let rect = nav.getBoundingClientRect();
 
