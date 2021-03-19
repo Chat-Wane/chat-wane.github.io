@@ -1,6 +1,10 @@
 
 window.onload = init
-window.onresize = resizeNav
+window.onresize = resize
+
+let HEIGHT = 150;
+let net = new Network(Math.round(window.innerWidth/10),
+		      window.innerWidth, HEIGHT);
 
 function init () {
     createNav();
@@ -8,38 +12,87 @@ function init () {
     createArt();
 }
 
+function resize () {
+    resizeArt();
+    resizeNav();    
+}
+
+
+
+function resizeArt() {
+    let art = document.getElementById("art");
+    art.setAttribute("width", window.innerWidth);
+    net.width = window.innerWidth;
+}
 
 function createArt() {
     // createElement does not work for svg
     const addr = "http://www.w3.org/2000/svg"
     let art = document.createElementNS(addr, "svg");
-    let width = window.innerWidth;
-    let height = 150;
     art.setAttribute("id", "art");
-    art.setAttribute("width", width);
-    art.setAttribute("height", height);
+    art.setAttribute("width", window.innerWidth);
+    art.setAttribute("height", HEIGHT);
     document.body.prepend(art);
 
-    let nodes = [{id: "1"}, {id: "2"}];
-    let links = [{source: "1", target: "2", value:"1"}];
+    net.width = window.innerWidth;
+    net.height = HEIGHT;
 
-    nodes.forEach( (node) => {
+    // create nodes
+    net.nodes.forEach( (node) => {
 	let circle = document.createElementNS(addr, "circle");
-	circle.setAttribute("cx", 500);
-	circle.setAttribute("cy", 50);
-	circle.setAttribute("r",  20);
-	circle.setAttribute("fill", "green");
+	circle.setAttribute("cx", node.x);
+	circle.setAttribute("cy", node.y);
+	circle.setAttribute("r",  3);
+	circle.setAttribute("fill", "var(--nord4)");
 	circle.setAttribute("id", node.id);
 	art.append(circle);
     })
 
-    art.getElementById(nodes[1].id).setAttribute("cx", 1000);
-    art.getElementById(nodes[1].id).setAttribute("fill", "blue");
-    
-    // setInterval( () => {
-    // 	let pos = parseFloat(art.getElementById(nodes[1].id).getAttribute("cx"));
-    // 	art.getElementById(nodes[1].id).setAttribute("cx", pos + 10);
-    // }, 1000);
+    // create links and update positions
+    setInterval( () => {
+	let oldLinks = new Set(net.links);
+	
+	net.tick(0.05);
+	net.nodes.forEach( (node) => {
+	    artNode = art.getElementById(node.id)
+	    artNode.setAttribute("cx", node.x);
+	    artNode.setAttribute("cy", node.y);
+	});
+
+	net.links.forEach( (link) => {
+	    artLink = art.getElementById(link);
+	    oldLinks.delete(link);
+	    
+	    if (!artLink) {
+		artLink = document.createElementNS(addr, "line");
+		artLink.setAttribute("id", link);
+		artLink.setAttribute("stroke", "var(--nord4)") // flashing a bit
+		art.prepend(artLink);
+		artLink = art.getElementById(link);
+	    } else {
+		artLink.setAttribute("stroke", "var(--nord6)")
+	    }
+	    
+	    
+	    let ids = link.split(";");
+	    let n1 = art.getElementById(ids[0]);
+	    let n2 = art.getElementById(ids[1]);
+
+	    artLink.setAttribute("x1", n1.getAttribute("cx"));
+	    artLink.setAttribute("y1", n1.getAttribute("cy"));
+	    artLink.setAttribute("x2", n2.getAttribute("cx"));
+	    artLink.setAttribute("y2", n2.getAttribute("cy"));
+	    artLink.setAttribute("stroke-width", 1)
+	});
+
+	oldLinks.forEach( (link) => {
+	    if (!art.getElementById(link)) {
+		console.log(link);
+	    }
+	    art.getElementById(link).remove();
+	});
+	
+    }, 50);
 }
 		 
 
