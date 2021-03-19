@@ -119,7 +119,7 @@ function highlightPre() {
  */
 function resizeNav() {
     let nav = document.getElementsByTagName("nav")[0];
-    nav.style.width = document.body.clientHeight + "px";
+    nav.style.width = window.innerHeight + "px";
     
     let rect = nav.getBoundingClientRect();
 

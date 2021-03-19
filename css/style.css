@@ -72,7 +72,6 @@ a:visited {
     width: 720px;
     padding-left: calc(+1px + var(--left-margin));
     margin:auto;
-    
 }
 
 #postamble {
