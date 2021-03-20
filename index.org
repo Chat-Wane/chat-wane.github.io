@@ -352,3 +352,24 @@ to iteratively improve. Nonetheless, here is a list of skills that I
 either (i) already know well or, (ii) would quickly learn again to be
 up-to-date.
 
+** Computer science
+
+OS: Unix, Windows
+
+Languages: C, C++, Java, LaTeX, NodeJS, Python, Rust
+
+Web: Javascript, CSS, HTML, WebRTC
+
+Groupeware: git (with Github and CI), svn
+
+Design: UML
+
+** Languages
+
+French: 5/5
+
+English: 4/5
+
+Spanish: 2/5
+
+Guitar: 2/5
