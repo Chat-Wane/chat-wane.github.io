@@ -13,13 +13,13 @@
 
 * About
 :PROPERTIES:
-:ROAD:     87 Bd Gabriel Lauriol
+:ROAD:     [HIDDEN]
 :CITY:     44300 Nantes, France
-:PHONE:    +33 6 79 90 42 26
+:PHONE:    [HIDDEN]
 :MAIL:     brice.nedelec@gmail.com
 :GITHUB:   chat-wane
 :DRIVING:  B
-:BIRTH:    10/18/1988
+:BIRTH:    1988
 :END:
 
 Let me introduce myself: my name is Brice Nédelec; and this is my
