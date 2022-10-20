@@ -86,6 +86,7 @@ pre {
     position: absolute;
     left: calc(5px + 100%);
     color: var(--nord4);
+    background-color: white;
     border: none;
     box-shadow: none;
     /*bottom: calc(24px + 100%); /* 8+16 margin h2 + p */
